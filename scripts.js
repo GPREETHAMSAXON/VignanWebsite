@@ -94,11 +94,12 @@ if (track) {
    DARK / LIGHT MODE TOGGLE
 ========================= */
 const toggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
 const body = document.body;
 
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
-  if (toggle) toggle.textContent = "☀️";
+  if (themeIcon) themeIcon.textContent = "☀️";
 }
 
 if (toggle) {
@@ -106,7 +107,7 @@ if (toggle) {
     body.classList.toggle("dark");
     const isDark = body.classList.contains("dark");
     localStorage.setItem("theme", isDark ? "dark" : "light");
-    toggle.textContent = isDark ? "☀️" : "🌙";
+    if (themeIcon) themeIcon.textContent = isDark ? "☀️" : "🌙";
   });
 }
 
