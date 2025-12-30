@@ -8,10 +8,9 @@ A static website for Vignan's Institute of Information Technology's Centre for I
 /
 ├── index.html          # Main homepage
 ├── innovation.html     # Innovation Cell page
-├── styles.css          # Main stylesheet
+├── styles.css          # Main stylesheet with design tokens
 ├── innovation.css      # Innovation page styles
-├── scripts.js          # Main JavaScript
-├── innovation.js       # Innovation page scripts
+├── scripts.js          # Main JavaScript (theme toggle, animations)
 ├── server.py           # Python HTTP server for local development
 ├── assets/
 │   ├── images/         # Logo and general images
@@ -21,10 +20,23 @@ A static website for Vignan's Institute of Information Technology's Centre for I
 
 ## Technologies
 - HTML5 with Tailwind CSS (via CDN)
-- Custom CSS styling
+- Custom CSS with design tokens (CSS variables)
 - Vanilla JavaScript
 - Font Awesome icons
 - Google Fonts (Inter, Playfair Display)
+
+## Design System
+The website uses CSS custom properties (design tokens) for:
+- Color palette (primary, surface, text colors)
+- Shadows (sm, md, lg)
+- Border radius (md, lg)
+- Transitions (fast, normal)
+- Dark mode support with automatic variable overrides
+
+## Accessibility
+- Reduced motion support via `prefers-reduced-motion` media query
+- Semantic HTML structure
+- ARIA labels on interactive elements
 
 ## Development
 The website is served using Python's built-in HTTP server on port 5000.
