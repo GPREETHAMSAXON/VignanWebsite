@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>Centre for Innovation & Startups | VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body
+  class="bg-[#f8f7f4] text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-500 font-sans relative overflow-x-hidden"
+>
+  <!-- NAVBAR -->
+  <nav
+    class="bg-white dark:bg-slate-950 shadow-sm px-10 py-4 flex justify-between items-center sticky top-0 z-50"
+  >
+
+    <div class="flex items-center space-x-4">
+      <img src="assets/images/Vignan_logo.png" class="h-10" alt="Vignan Logo" />
+      <div>
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          Vignan's Institute of Information Technology
+        </p>
+        <h1 class="text-sm font-semibold">Centre for Innovation & Startups</h1>
+      </div>
+    </div>
+
+    <!-- Navigation Links + Quick Buttons -->
+    <div class="flex items-center space-x-6">
+      <ul
+        class="hidden md:flex space-x-6 text-sm font-medium items-center"
+      >
+        <li class="hover:text-blue-700 cursor-pointer">Home</li>
+        <li>
+  <a href="innovation.html" class="hover:text-blue-700 cursor-pointer">
+    Innovation Cell
+  </a>
+</li>
+        <li class="hover:text-blue-700 cursor-pointer">Startups</li>
+        <li class="hover:text-blue-700 cursor-pointer">IPR</li>
+        <li class="hover:text-blue-700 cursor-pointer">Idea Lab</li>
+        <li class="hover:text-blue-700 cursor-pointer">Events</li>
+      </ul>
+
+      <!-- Theme Toggle -->
+      <button
+        id="themeToggle"
+        class="p-2 rounded-full border hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+        aria-label="Toggle dark mode"
+      >
+        🌙
+      </button>
+      <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("themeToggle");
+  const body = document.body;
+
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    toggle.textContent = "☀️";
+  }
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    const isDark = body.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    toggle.textContent = isDark ? "☀️" : "🌙";
+  });
+});
+</script>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section
+    class="relative py-24 text-center px-6 overflow-hidden"
+    aria-label="Hero section"
+  >
+    <!-- Floating Icons -->
+    <div aria-hidden="true" class="floating-icons pointer-events-none">
+      <i class="fa-solid fa-lightbulb fa-2xl icon-bubble"></i>
+      <i class="fa-solid fa-robot fa-2xl icon-bubble"></i>
+      <i class="fa-solid fa-cogs fa-2xl icon-bubble"></i>
+      <i class="fa-solid fa-microchip fa-2xl icon-bubble"></i>
+      <i class="fa-solid fa-dna fa-2xl icon-bubble"></i>
+      <i class="fa-solid fa-network-wired fa-2xl icon-bubble"></i>
+      <i class="fa-solid fa-drone fa-2xl icon-bubble"></i>
+    </div>
+
+    <!-- Animated Quote -->
+    <h2
+      class="text-5xl font-extrabold mb-6 leading-tight relative z-10"
+      id="animated-quote"
+      aria-live="polite"
+    >
+      Igniting Ideas. Inspiring Innovation.<br />
+      <span class="text-blue-700">Building Startups.</span>
+    </h2>
+
+    <p
+      class="max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-300 relative z-10"
+    >
+      A dynamic hub driving innovation, research, and entrepreneurial growth
+      among students and faculty at VIIT.
+    </p>
+
+    <div
+      class="mt-10 flex justify-center gap-6 relative z-10 flex-wrap max-w-md mx-auto"
+    >
+      <button
+        class="px-6 py-3 bg-blue-700 text-white rounded-lg shadow hover:bg-blue-800 transition"
+      >
+        Explore Innovations
+      </button>
+      <button
+        class="px-6 py-3 border border-blue-700 text-blue-700 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition"
+      >
+        Incubate Your Idea
+      </button>
+      <button
+        class="px-6 py-3 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 dark:hover:bg-slate-800 transition"
+      >
+        Apply for Startup Support
+      </button>
+    </div>
+
+    <!-- Dynamic Ticker -->
+    <div
+      class="mt-14 relative max-w-5xl mx-auto bg-blue-50 dark:bg-slate-800 rounded-lg py-2 overflow-hidden"
+      aria-label="Funding and events ticker"
+    >
+      <div class="ticker-content whitespace-nowrap will-change-transform">
+        <span
+          class="inline-block mx-6 text-blue-800 dark:text-blue-300 font-semibold"
+          >🚀 Call for Funding Applications - Deadline 31 Jan 2026</span
+        >
+        <span
+          class="inline-block mx-6 text-blue-800 dark:text-blue-300 font-semibold"
+          >💡 Hackathon: Innovate for Sustainable Tech - Register by Feb 15</span
+        >
+        <span
+          class="inline-block mx-6 text-blue-800 dark:text-blue-300 font-semibold"
+          >🏆 Recent Achievement: 10 patents filed in Q4 2025</span
+        >
+        <span
+          class="inline-block mx-6 text-blue-800 dark:text-blue-300 font-semibold"
+          >🎉 Startup of the Month: EcoTech Solutions - Raised ₹5 Cr seed funding</span
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK ACCESS TILES -->
+  <section
+    class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+    aria-label="Quick Access Tiles"
+  >
+    <a
+      href="#"
+      class="quick-tile group bg-white dark:bg-slate-800 rounded-xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition transform hover:-translate-y-2"
+      tabindex="0"
+    >
+      <div
+        class="text-4xl text-yellow-400 mb-3 group-hover:text-yellow-500 transition"
+        aria-hidden="true"
+      >
+        💡
+      </div>
+      <span class="font-semibold text-center text-slate-900 dark:text-slate-100"
+        >Innovation Cell</span
+      >
+    </a>
+    <a
+      href="#"
+      class="quick-tile group bg-white dark:bg-slate-800 rounded-xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition transform hover:-translate-y-2"
+      tabindex="0"
+    >
+      <div
+        class="text-4xl text-red-500 mb-3 group-hover:text-red-600 transition"
+        aria-hidden="true"
+      >
+        🚀
+      </div>
+      <span class="font-semibold text-center text-slate-900 dark:text-slate-100"
+        >ED Cell / Startup Hub</span
+      >
+    </a>
+    <a
+      href="#"
+      class="quick-tile group bg-white dark:bg-slate-800 rounded-xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition transform hover:-translate-y-2"
+      tabindex="0"
+    >
+      <div
+        class="text-4xl text-purple-600 mb-3 group-hover:text-purple-700 transition"
+        aria-hidden="true"
+      >
+        🧠
+      </div>
+      <span class="font-semibold text-center text-slate-900 dark:text-slate-100"
+        >IPR & Patents</span
+      >
+    </a>
+    <a
+      href="#"
+      class="quick-tile group bg-white dark:bg-slate-800 rounded-xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition transform hover:-translate-y-2"
+      tabindex="0"
+    >
+      <div
+        class="text-4xl text-green-500 mb-3 group-hover:text-green-600 transition"
+        aria-hidden="true"
+      >
+        🔬
+      </div>
+      <span class="font-semibold text-center text-slate-900 dark:text-slate-100"
+        >R&D Cell</span
+      >
+    </a>
+    <a
+      href="#"
+      class="quick-tile group bg-white dark:bg-slate-800 rounded-xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition transform hover:-translate-y-2"
+      tabindex="0"
+    >
+      <div
+        class="text-4xl text-indigo-600 mb-3 group-hover:text-indigo-700 transition"
+        aria-hidden="true"
+      >
+        🏭
+      </div>
+      <span class="font-semibold text-center text-slate-900 dark:text-slate-100"
+        >Idea Lab & Prototyping</span
+      >
+    </a>
+    <a
+      href="#"
+      class="quick-tile group bg-white dark:bg-slate-800 rounded-xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition transform hover:-translate-y-2"
+      tabindex="0"
+    >
+      <div
+        class="text-4xl text-gray-600 mb-3 group-hover:text-gray-700 transition"
+        aria-hidden="true"
+      >
+        📄
+      </div>
+      <span class="font-semibold text-center text-slate-900 dark:text-slate-100"
+        >Proposals / Grant Schemes</span
+      >
+    </a>
+  </section>
+  <!-- ================= ACHIEVEMENTS SCROLLER ================= -->
+<section class="py-20 bg-[#f8f7f4] dark:bg-slate-900">
+  <h3 class="text-4xl font-bold text-center mb-12">
+    Innovation Achievements
+  </h3>
+
+  <div class="overflow-hidden relative">
+    <div id="scroll-track" class="scroll-track flex gap-10 px-10">
+
+      <!-- CARD 1 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/sih.jpeg" alt="SIH 2025">
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/nsrit.jpeg" alt="NEC 2025">
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/yukti.jpeg" alt="APF Yukti">
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/ecell.jpeg" alt="E-Cell Core">
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/ecell_105th.jpeg" alt="E-Cell Core">
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/esummit.jpeg" alt="E-Cell Core">
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/icc_award.jpeg" alt="E-Cell Core">
+      </div>
+
+      <!-- DUPLICATE FOR SMOOTH LOOP -->
+      <!-- CARD 1 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/sih.jpeg" alt="SIH 2025">
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/nsrit.jpeg" alt="NEC 2025">
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/yukti.jpeg" alt="APF Yukti">
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/ecell.jpeg" alt="E-Cell Core">
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/ecell_105th.jpeg" alt="E-Cell Core">
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/esummit.jpeg" alt="E-Cell Core">
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="achievement-card">
+        <img src="assets/achievments/icc_award.jpeg" alt="E-Cell Core">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- KPI SECTION -->
+  <section class="py-20 bg-white dark:bg-slate-950">
+    <h3 class="text-4xl font-bold text-center mb-14">
+      Innovation at a Glance
+    </h3>
+
+    <div
+      class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-10 px-6"
+    >
+      <div class="kpi-card float-card">
+        <div class="kpi-inner">
+          <h4>80+</h4>
+          <h5>Innovations Developed</h5>
+          <p>
+            Student-led and faculty-guided innovations developed through
+            institutional research and startup initiatives.
+          </p>
+        </div>
+      </div>
+
+      <div class="kpi-card float-card">
+        <div class="kpi-inner">
+          <h4>30+</h4>
+          <h5>Patents Filed</h5>
+          <p>
+            Intellectual Property Rights secured through national patent
+            filings across emerging technology domains.
+          </p>
+        </div>
+      </div>
+
+      <div class="kpi-card float-card">
+        <div class="kpi-inner">
+          <h4>12</h4>
+          <h5>Products Commercialized</h5>
+          <p>
+            Innovative solutions developed on campus and successfully
+            commercialized, showcasing our commitment to research,
+            entrepreneurship, and real-world impact.
+          </p>
+        </div>
+      </div>
+
+      <div class="kpi-card float-card">
+        <div class="kpi-inner">
+          <h4>25</h4>
+          <h5>Startups Incubated</h5>
+          <p>
+            startups successfully incubated and mentored under the Centre for
+            Innovation & Entrepreneurship.
+          </p>
+        </div>
+      </div>
+
+      <div class="kpi-card float-card md:col-span-2 md:col-start-2">
+        <div class="kpi-inner">
+          <h4>₹ 67 Cr</h4>
+          <h5>Grants Received</h5>
+          <p>
+            Research grants and innovation funding mobilized through government
+            and industry collaborations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US PAGE SECTION -->
+  <section
+    class="max-w-5xl mx-auto px-6 py-20 bg-blue-50 dark:bg-slate-800 rounded-xl shadow-md"
+    aria-labelledby="about-title"
+  >
+    <h2
+      id="about-title"
+      class="text-3xl font-extrabold mb-10 text-center text-blue-800 dark:text-blue-400"
+    >
+      About Centre for Innovation & Startups
+    </h2>
+
+    <div class="space-y-12 max-w-3xl mx-auto text-slate-800 dark:text-slate-200">
+      <article>
+        <h3 class="text-2xl font-semibold mb-3">Vision</h3>
+        <p class="text-lg">
+          To empower young innovators to transform ideas into scalable
+          solutions through research-driven development, entrepreneurship, and
+          intellectual property creation.
+        </p>
+      </article>
+
+      <article>
+        <h3 class="text-2xl font-semibold mb-3">Mission</h3>
+        <ul class="list-disc pl-6 space-y-2 text-lg">
+          <li>Build a vibrant innovation ecosystem</li>
+          <li>Promote faculty/student research culture</li>
+          <li>Support idea-to-product conversion</li>
+          <li>Develop patents, prototypes & startups</li>
+          <li>Enable technology transfer & commercialization</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3 class="text-2xl font-semibold mb-3">Objectives</h3>
+        <ul class="list-disc pl-6 space-y-2 text-lg">
+          <li>Conduct idea-thons, hackathons, PoC grants</li>
+          <li>Provide access to labs, mentoring & funding</li>
+          <li>Create market-ready products</li>
+          <li>Facilitate industry collaboration</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- 360° Virtual Walkthrough & Chatbot Integration -->
+  <section class="max-w-7xl mx-auto px-6 py-20 space-y-16">
+    <!-- 360° Virtual Walkthrough Embed -->
+    <div
+      class="bg-white dark:bg-slate-900 rounded-lg shadow-lg overflow-hidden"
+    >
+      <iframe
+        src="https://kuula.co/share/collection/9JGXn?logo=0&info=0&fs=0&vr=0"
+        class="w-full h-96 border-0"
+        allowfullscreen
+        title="VIIT Innovation Centre Virtual Tour"
+      ></iframe>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div
+      id="chatbot"
+      class="bg-blue-50 dark:bg-slate-800 rounded-lg p-6 shadow-lg"
+    >
+      <h3 class="text-xl font-semibold mb-4">Ask our Innovation Bot</h3>
+      <input
+        type="text"
+        placeholder="Type your question..."
+        class="w-full rounded border border-blue-400 px-4 py-2 dark:bg-slate-900 dark:text-white"
+        id="chat-input"
+        aria-label="Ask our Innovation Bot"
+      />
+      <button
+        class="mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition"
+        id="chat-submit"
+      >
+        Send
+      </button>
+      <div id="chat-response" class="mt-4 text-slate-900 dark:text-slate-100"></div>
+    </div>
+  </section>
+
+  <footer
+  id="footer"
+  class="bg-[#1f3f5f] text-slate-200 pt-16"
+>
+  <div
+    class="max-w-7xl mx-auto px-6 pb-14 grid grid-cols-1 md:grid-cols-5 gap-12"
+  >
+    <!-- COL 1 : LOGO + CONTACT -->
+    <div class="space-y-4">
+      <!-- Logo (you already have it) -->
+      <div class="flex items-center gap-3">
+        <img
+          src="assets/images/Vignan_logo_only.png"
+          alt="Vignan Logo"
+          class="h-12"
+        />
+        <h3 class="footer-brand">VIGNAN</h3>
+      </div>
+
+      <h2 class="text-sm leading-relaxed">
+        Vignan's Institute of Information Technology.
+      </h2>
+
+      <div class="space-y-2 text-sm">
+        <p class="flex items-start gap-2">
+          <i class="fa-solid fa-location-dot mt-1"></i>
+          <span>
+            Beside VSEZ, Duvvada, Vadlapudi Post, Gajuwaka,
+            Visakhapatnam – 530049, A.P
+          </span>
+        </p>
+        <p class="flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i>
+          vignaniit@yahoo.com
+        </p>
+        <p class="flex items-center gap-2">
+          <i class="fa-solid fa-phone"></i>
+          +91-08912755222
+        </p>
+      </div>
+
+      <!-- SOCIAL ICONS -->
+      <div class="flex gap-4 pt-3 text-lg">
+        <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="footer-social"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- COL 2 : ACCREDITATION -->
+    <div>
+      <h4 class="footer-heading">ACCREDITATION</h4>
+      <ul class="footer-links">
+        <li><a href="#">AICTE</a></li>
+        <li><a href="#">UGC e-Samadhan</a></li>
+        <li><a href="#">JNTUK</a></li>
+        <li><a href="#">ARIIA</a></li>
+        <li><a href="#">AISHE</a></li>
+      </ul>
+    </div>
+
+    <!-- COL 3 : STATUTORY -->
+    <div>
+      <h4 class="footer-heading">STATUTORY</h4>
+      <ul class="footer-links">
+        <li><a href="#">IQAC</a></li>
+        <li><a href="#">NBA</a></li>
+        <li><a href="#">NAAC</a></li>
+        <li><a href="#">NIRF</a></li>
+        <li><a href="#">MHRD – ICT</a></li>
+      </ul>
+    </div>
+
+    <!-- COL 4 : SUPPORT & ACCESS -->
+    <div>
+      <h4 class="footer-heading">SUPPORT & ACCESS</h4>
+      <ul class="footer-links">
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">Grievances</a></li>
+        <li><a href="#">Maintenance</a></li>
+        <li><a href="#">Screen Reader</a></li>
+        <li><a href="#">RTI</a></li>
+      </ul>
+    </div>
+
+    <!-- COL 5 : RESOURCES & LOCATION -->
+    <div>
+      <h4 class="footer-heading">RESOURCES & LOCATION</h4>
+      <ul class="footer-links">
+        <li><a href="#">NAD</a></li>
+        <li><a href="#">E-Learning</a></li>
+        <li><a href="#">MATLAB</a></li>
+        <li><a href="#">Map Location</a></li>
+        <li><a href="#">Contact Address</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FOOTER BOTTOM -->
+  <div
+    class="border-t border-white/20 text-center text-sm py-6"
+  >
+    © 2025 Vignan's Institute of Information Technology. All Rights Reserved.
+  </div>
+</footer>
+
+
+  <!-- Custom JS -->
+  <script src="scripts.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
