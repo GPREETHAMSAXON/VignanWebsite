@@ -41,9 +41,10 @@ if (announcementsContainer && announcementsScroll) {
   scrollAnnouncements();
 }
 
-// Scroll track element
-const track = document.getElementById("scroll-track");
-if (track) {
+// Scroll track element (wrapped in IIFE to avoid global scope conflicts)
+(function() {
+  const track = document.getElementById("scroll-track");
+  if (track) {
 
   /* =========================
      FOOTER ANIMATION
@@ -124,9 +125,10 @@ if (track) {
     track.style.animationPlayState = document.hidden ? "paused" : "running";
   });
 
-} else {
-  console.error("Scroll track not found");
-}
+  } else {
+    console.error("Scroll track not found");
+  }
+})();
 
 /* =========================
    DARK / LIGHT MODE TOGGLE
@@ -226,6 +228,22 @@ document.querySelectorAll(".kpi-card").forEach((card) => {
     `;
   });
 });
+
+/* =========================
+   SCROLL ANIMATIONS
+========================= */
+const animateElements = document.querySelectorAll('.animate-on-scroll');
+if (animateElements.length > 0) {
+  const animateObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  animateElements.forEach(el => animateObserver.observe(el));
+}
 
 /* =========================
    ACHIEVEMENT HOVER BLUR EFFECT
