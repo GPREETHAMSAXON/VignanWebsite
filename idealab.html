@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Idea Lab | Centre for Innovation & Startups - VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="innovation.css" />
+  <link rel="stylesheet" href="idealab.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
+        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
+        </a>
+        <div>
+          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="innovation.html" class="nav-item">Innovation Cell</a>
+        <a href="edcell.html" class="nav-item">ED Cell</a>
+        <a href="ipr.html" class="nav-item">IPR</a>
+        <a href="research.html" class="nav-item">R&D Cell</a>
+        <a href="idealab.html" class="nav-item active">Idea Lab</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="events.html" class="nav-item">Events</a>
+        <a href="resources.html" class="nav-item">Resources</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50">Home</a>
+      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
+      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50">ED Cell</a>
+      <a href="ipr.html" class="block px-4 py-3 border-b hover:bg-gray-50">IPR</a>
+      <a href="research.html" class="block px-4 py-3 border-b hover:bg-gray-50">R&D Cell</a>
+      <a href="idealab.html" class="block px-4 py-3 border-b hover:bg-gray-50 bg-blue-50 text-[#1e40af]">Idea Lab</a>
+      <a href="projects.html" class="block px-4 py-3 border-b hover:bg-gray-50">Projects</a>
+      <a href="events.html" class="block px-4 py-3 border-b hover:bg-gray-50">Events</a>
+      <a href="resources.html" class="block px-4 py-3 border-b hover:bg-gray-50">Resources</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-gray-50">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero idealab-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="hero-gear-animation">
+      <div class="gear gear-1"><i class="fa-solid fa-gear"></i></div>
+      <div class="gear gear-2"><i class="fa-solid fa-gear"></i></div>
+      <div class="gear gear-3"><i class="fa-solid fa-cog"></i></div>
+    </div>
+    <div class="page-hero-content">
+      <h1 class="animate-fade-in">Idea Lab</h1>
+      <p class="animate-fade-in-delay">Where Innovation Meets Execution</p>
+      <div class="hero-badges animate-fade-in-delay-2">
+        <span class="hero-badge"><i class="fa-solid fa-lightbulb mr-2"></i>Innovation Cell</span>
+        <span class="hero-badge"><i class="fa-solid fa-rocket mr-2"></i>ED Cell</span>
+        <span class="hero-badge"><i class="fa-solid fa-certificate mr-2"></i>IPR Cell</span>
+      </div>
+      <div class="breadcrumb animate-fade-in-delay-2">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Idea Lab</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INNOVATION FUNNEL -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Innovation Funnel</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-600 mt-4">From Idea to Impact - Your Journey Through the Lab</p>
+      </div>
+
+      <div class="innovation-funnel">
+        <div class="funnel-stage animate-on-scroll" data-stage="1">
+          <div class="funnel-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <div class="funnel-content">
+            <h3>Ideation</h3>
+            <p>Submit your innovative ideas through our portal</p>
+            <span class="funnel-count">500+ Ideas Submitted</span>
+          </div>
+          <div class="funnel-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="funnel-stage animate-on-scroll delay-100" data-stage="2">
+          <div class="funnel-icon"><i class="fa-solid fa-filter"></i></div>
+          <div class="funnel-content">
+            <h3>Screening</h3>
+            <p>Expert committee evaluates feasibility & novelty</p>
+            <span class="funnel-count">200+ Shortlisted</span>
+          </div>
+          <div class="funnel-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="funnel-stage animate-on-scroll delay-200" data-stage="3">
+          <div class="funnel-icon"><i class="fa-solid fa-hammer"></i></div>
+          <div class="funnel-content">
+            <h3>Prototyping</h3>
+            <p>Build your MVP in our state-of-art labs</p>
+            <span class="funnel-count">80+ Prototypes Built</span>
+          </div>
+          <div class="funnel-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="funnel-stage animate-on-scroll delay-300" data-stage="4">
+          <div class="funnel-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="funnel-content">
+            <h3>IP Protection</h3>
+            <p>Secure patents, copyrights & trademarks</p>
+            <span class="funnel-count">45+ Patents Filed</span>
+          </div>
+          <div class="funnel-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="funnel-stage animate-on-scroll delay-400" data-stage="5">
+          <div class="funnel-icon"><i class="fa-solid fa-rocket"></i></div>
+          <div class="funnel-content">
+            <h3>Incubation</h3>
+            <p>Launch your startup with full support</p>
+            <span class="funnel-count">25+ Startups Launched</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section class="py-20 bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>World-Class Facilities</h2>
+        <p>Cutting-edge labs equipped with latest technology</p>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-card animate-on-scroll">
+          <div class="facility-icon">
+            <i class="fa-solid fa-cube"></i>
+          </div>
+          <h3>Rapid Prototyping Lab</h3>
+          <ul class="facility-features">
+            <li><i class="fa-solid fa-check"></i> 3D Printers (FDM, SLA, SLS)</li>
+            <li><i class="fa-solid fa-check"></i> PCB Fabrication Unit</li>
+            <li><i class="fa-solid fa-check"></i> Laser Cutting Machine</li>
+            <li><i class="fa-solid fa-check"></i> CNC Milling Machine</li>
+          </ul>
+          <div class="facility-status">
+            <span class="status-dot active"></span>Available 24/7
+          </div>
+        </div>
+
+        <div class="facility-card animate-on-scroll delay-100">
+          <div class="facility-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3>AI/IoT Development Lab</h3>
+          <ul class="facility-features">
+            <li><i class="fa-solid fa-check"></i> GPU Workstations</li>
+            <li><i class="fa-solid fa-check"></i> IoT Development Kits</li>
+            <li><i class="fa-solid fa-check"></i> Edge Computing Devices</li>
+            <li><i class="fa-solid fa-check"></i> Sensor Library (100+ types)</li>
+          </ul>
+          <div class="facility-status">
+            <span class="status-dot active"></span>Available 24/7
+          </div>
+        </div>
+
+        <div class="facility-card animate-on-scroll delay-200">
+          <div class="facility-icon">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3>Mechanical/Robotics Lab</h3>
+          <ul class="facility-features">
+            <li><i class="fa-solid fa-check"></i> Industrial Robot Arms</li>
+            <li><i class="fa-solid fa-check"></i> Drone Development Kits</li>
+            <li><i class="fa-solid fa-check"></i> Welding & Machining Tools</li>
+            <li><i class="fa-solid fa-check"></i> Material Testing Equipment</li>
+          </ul>
+          <div class="facility-status">
+            <span class="status-dot active"></span>Available 24/7
+          </div>
+        </div>
+
+        <div class="facility-card animate-on-scroll delay-300">
+          <div class="facility-icon">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3>MedTech Innovation Zone</h3>
+          <ul class="facility-features">
+            <li><i class="fa-solid fa-check"></i> Biomedical Equipment</li>
+            <li><i class="fa-solid fa-check"></i> Wearable Dev Kits</li>
+            <li><i class="fa-solid fa-check"></i> Medical Imaging Tools</li>
+            <li><i class="fa-solid fa-check"></i> Biosensor Development</li>
+          </ul>
+          <div class="facility-status">
+            <span class="status-dot active"></span>Available 24/7
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY CAROUSEL -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Lab Gallery</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="gallery-carousel-container">
+        <button class="carousel-btn prev" id="galleryPrev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="gallery-carousel" id="galleryCarousel">
+          <div class="gallery-slide">
+            <div class="gallery-image-placeholder">
+              <i class="fa-solid fa-cube"></i>
+              <span>3D Printing Lab</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-image-placeholder">
+              <i class="fa-solid fa-users"></i>
+              <span>Students Working</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-image-placeholder">
+              <i class="fa-solid fa-code"></i>
+              <span>Hackathon 2025</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-image-placeholder">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Demo Day</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-image-placeholder">
+              <i class="fa-solid fa-robot"></i>
+              <span>Robotics Lab</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-image-placeholder">
+              <i class="fa-solid fa-microchip"></i>
+              <span>IoT Workshop</span>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" id="galleryNext"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- WORKSHOPS & TRAINING -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div class="animate-on-scroll">
+          <div class="section-title text-left">
+            <h2>Workshops & Skill Sessions</h2>
+            <div class="title-underline ml-0"></div>
+          </div>
+
+          <div class="workshop-calendar">
+            <div class="workshop-item">
+              <div class="workshop-date">
+                <span class="month">Feb</span>
+                <span class="day">10</span>
+              </div>
+              <div class="workshop-info">
+                <h4>3D Printing Fundamentals</h4>
+                <p>Learn FDM, SLA techniques</p>
+                <span class="workshop-badge">Hands-on</span>
+              </div>
+            </div>
+
+            <div class="workshop-item">
+              <div class="workshop-date">
+                <span class="month">Feb</span>
+                <span class="day">18</span>
+              </div>
+              <div class="workshop-info">
+                <h4>IoT with Raspberry Pi</h4>
+                <p>Build smart devices from scratch</p>
+                <span class="workshop-badge">Beginner</span>
+              </div>
+            </div>
+
+            <div class="workshop-item">
+              <div class="workshop-date">
+                <span class="month">Feb</span>
+                <span class="day">25</span>
+              </div>
+              <div class="workshop-info">
+                <h4>PCB Design & Fabrication</h4>
+                <p>Eagle CAD to production</p>
+                <span class="workshop-badge">Advanced</span>
+              </div>
+            </div>
+
+            <div class="workshop-item">
+              <div class="workshop-date">
+                <span class="month">Mar</span>
+                <span class="day">05</span>
+              </div>
+              <div class="workshop-info">
+                <h4>Design Thinking Workshop</h4>
+                <p>Problem solving methodology</p>
+                <span class="workshop-badge">All Levels</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="events.html" class="btn-primary mt-6 inline-block">View Full Calendar <i class="fa-solid fa-arrow-right ml-2"></i></a>
+        </div>
+
+        <div class="animate-on-scroll delay-200">
+          <div class="section-title text-left">
+            <h2>Training Modules</h2>
+            <div class="title-underline ml-0"></div>
+          </div>
+
+          <div class="training-modules">
+            <div class="training-module">
+              <div class="module-icon"><i class="fa-solid fa-cube"></i></div>
+              <div class="module-content">
+                <h4>3D Modeling & CAD</h4>
+                <div class="module-meta">
+                  <span><i class="fa-solid fa-clock"></i> 20 Hours</span>
+                  <span><i class="fa-solid fa-certificate"></i> Certificate</span>
+                </div>
+                <div class="module-progress">
+                  <div class="progress-fill" style="width: 75%"></div>
+                </div>
+                <span class="module-enrolled">45 Enrolled</span>
+              </div>
+            </div>
+
+            <div class="training-module">
+              <div class="module-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div class="module-content">
+                <h4>Embedded Systems</h4>
+                <div class="module-meta">
+                  <span><i class="fa-solid fa-clock"></i> 30 Hours</span>
+                  <span><i class="fa-solid fa-certificate"></i> Certificate</span>
+                </div>
+                <div class="module-progress">
+                  <div class="progress-fill" style="width: 60%"></div>
+                </div>
+                <span class="module-enrolled">38 Enrolled</span>
+              </div>
+            </div>
+
+            <div class="training-module">
+              <div class="module-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="module-content">
+                <h4>AI/ML Foundations</h4>
+                <div class="module-meta">
+                  <span><i class="fa-solid fa-clock"></i> 40 Hours</span>
+                  <span><i class="fa-solid fa-certificate"></i> Certificate</span>
+                </div>
+                <div class="module-progress">
+                  <div class="progress-fill" style="width: 90%"></div>
+                </div>
+                <span class="module-enrolled">62 Enrolled</span>
+              </div>
+            </div>
+
+            <div class="training-module">
+              <div class="module-icon"><i class="fa-solid fa-robot"></i></div>
+              <div class="module-content">
+                <h4>Robotics & Automation</h4>
+                <div class="module-meta">
+                  <span><i class="fa-solid fa-clock"></i> 25 Hours</span>
+                  <span><i class="fa-solid fa-certificate"></i> Certificate</span>
+                </div>
+                <div class="module-progress">
+                  <div class="progress-fill" style="width: 45%"></div>
+                </div>
+                <span class="module-enrolled">28 Enrolled</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDEATION SUBMISSION PORTAL -->
+  <section class="py-20 bg-gradient-to-r from-[#f59e0b] to-[#d97706] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-6">Submit Your Idea</h2>
+          <p class="text-lg opacity-90 mb-8">
+            Have an innovative idea? Submit it through our portal and get access to mentorship, prototyping facilities, funding opportunities, and IP protection support.
+          </p>
+          <div class="idea-benefits">
+            <div class="benefit-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Expert mentorship from industry professionals</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Free access to prototyping labs</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Funding support up to ₹10 Lakhs</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Patent filing assistance</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Incubation space for startups</span>
+            </div>
+          </div>
+        </div>
+        <div class="animate-on-scroll delay-200">
+          <div class="idea-form-container">
+            <h3>Idea Submission Form</h3>
+            <form class="idea-form" id="ideaForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Full Name *</label>
+                  <input type="text" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                  <label>Email *</label>
+                  <input type="email" placeholder="Enter your email" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Department</label>
+                  <select>
+                    <option value="">Select Department</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="ece">Electronics & Communication</option>
+                    <option value="eee">Electrical Engineering</option>
+                    <option value="mech">Mechanical Engineering</option>
+                    <option value="civil">Civil Engineering</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Category</label>
+                  <select>
+                    <option value="">Select Category</option>
+                    <option value="software">Software/App</option>
+                    <option value="hardware">Hardware/IoT</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="agritech">AgriTech</option>
+                    <option value="energy">Energy/Environment</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Idea Title *</label>
+                <input type="text" placeholder="Brief title of your innovation" required />
+              </div>
+              <div class="form-group">
+                <label>Problem Statement *</label>
+                <textarea rows="3" placeholder="What problem does your idea solve?" required></textarea>
+              </div>
+              <div class="form-group">
+                <label>Proposed Solution *</label>
+                <textarea rows="3" placeholder="How does your idea solve the problem?" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <i class="fa-solid fa-paper-plane mr-2"></i>Submit Idea
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPOSITORY -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Resource Repository</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-600 mt-4">Access 3D models, code repositories, and lab manuals</p>
+      </div>
+
+      <div class="repository-grid">
+        <div class="repo-card animate-on-scroll">
+          <div class="repo-icon"><i class="fa-solid fa-cube"></i></div>
+          <h3>3D Models Library</h3>
+          <p>Download ready-to-print 3D models for your projects</p>
+          <div class="repo-stats">
+            <span><i class="fa-solid fa-file"></i> 250+ Models</span>
+            <span><i class="fa-solid fa-download"></i> Free Access</span>
+          </div>
+          <a href="#" class="repo-link">Browse Library <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="repo-card animate-on-scroll delay-100">
+          <div class="repo-icon"><i class="fa-brands fa-github"></i></div>
+          <h3>GitHub Repositories</h3>
+          <p>Open source project code and documentation</p>
+          <div class="repo-stats">
+            <span><i class="fa-solid fa-code-branch"></i> 85+ Repos</span>
+            <span><i class="fa-solid fa-star"></i> 500+ Stars</span>
+          </div>
+          <a href="#" class="repo-link">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="repo-card animate-on-scroll delay-200">
+          <div class="repo-icon"><i class="fa-solid fa-book"></i></div>
+          <h3>Lab Manuals</h3>
+          <p>Step-by-step guides for all lab equipment</p>
+          <div class="repo-stats">
+            <span><i class="fa-solid fa-file-pdf"></i> 45+ Manuals</span>
+            <span><i class="fa-solid fa-video"></i> Video Tutorials</span>
+          </div>
+          <a href="#" class="repo-link">Download Manuals <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="repo-card animate-on-scroll delay-300">
+          <div class="repo-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Component Datasheets</h3>
+          <p>Technical specifications for all lab components</p>
+          <div class="repo-stats">
+            <span><i class="fa-solid fa-file-pdf"></i> 200+ Datasheets</span>
+            <span><i class="fa-solid fa-search"></i> Searchable</span>
+          </div>
+          <a href="#" class="repo-link">Search Datasheets <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SCROLL -->
+  <section class="achievements-scroll-section">
+    <div class="achievements-scroll-container">
+      <div class="achievements-scroll-track" id="achievementsTrack">
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Smart India Hackathon Winners 2025</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-medal"></i>
+          <span>Best Innovation Hub Award - AICTE</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-award"></i>
+          <span>₹67 Crore Research Grants</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-certificate"></i>
+          <span>45+ Patents Filed</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-rocket"></i>
+          <span>25 Startups Incubated</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-star"></i>
+          <span>NAAC A++ Accredited</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-building"></i>
+          <span>NBA Accredited Programs</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-handshake"></i>
+          <span>28+ Industry Partners</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Vignan_logo_only.png" alt="Vignan Logo" class="h-12" />
+            <div>
+              <h3 class="text-white font-bold text-lg">VIGNAN</h3>
+              <p class="text-sm">Centre for Innovation & Startups</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">Vignan's Institute of Information Technology (Autonomous)</p>
+          <div class="space-y-2 text-sm">
+            <p><i class="fa-solid fa-location-dot mr-2 text-[#60a5fa]"></i>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+            <p><i class="fa-solid fa-envelope mr-2 text-[#60a5fa]"></i>vignaniit@yahoo.com</p>
+            <p><i class="fa-solid fa-phone mr-2 text-[#60a5fa]"></i>+91-08912755222</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="innovation.html" class="hover:text-white transition">Innovation Cell</a></li>
+            <li><a href="edcell.html" class="hover:text-white transition">ED Cell</a></li>
+            <li><a href="ipr.html" class="hover:text-white transition">IPR Cell</a></li>
+            <li><a href="research.html" class="hover:text-white transition">R&D Cell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="idealab.html" class="hover:text-white transition">Idea Lab</a></li>
+            <li><a href="projects.html" class="hover:text-white transition">Projects</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events</a></li>
+            <li><a href="resources.html" class="hover:text-white transition">Resources</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-sm">
+      <p>&copy; 2026 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // Gallery Carousel
+    const carousel = document.getElementById('galleryCarousel');
+    const prevBtn = document.getElementById('galleryPrev');
+    const nextBtn = document.getElementById('galleryNext');
+    const dotsContainer = document.getElementById('carouselDots');
+    let currentSlide = 0;
+    const slides = carousel.querySelectorAll('.gallery-slide');
+    const totalSlides = slides.length;
+    const visibleSlides = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+
+    for (let i = 0; i < Math.ceil(totalSlides / visibleSlides); i++) {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+
+    function updateCarousel() {
+      const slideWidth = slides[0].offsetWidth + 24;
+      carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    function goToSlide(index) {
+      currentSlide = Math.min(index, totalSlides - visibleSlides);
+      updateCarousel();
+    }
+
+    prevBtn?.addEventListener('click', () => {
+      currentSlide = Math.max(0, currentSlide - 1);
+      updateCarousel();
+    });
+
+    nextBtn?.addEventListener('click', () => {
+      currentSlide = Math.min(totalSlides - visibleSlides, currentSlide + 1);
+      updateCarousel();
+    });
+
+    // Idea Form
+    document.getElementById('ideaForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('.submit-btn');
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>Submitting...';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i>Idea Submitted!';
+        btn.style.background = '#10b981';
+        setTimeout(() => {
+          e.target.reset();
+          btn.innerHTML = '<i class="fa-solid fa-paper-plane mr-2"></i>Submit Idea';
+          btn.style.background = '';
+        }, 2000);
+      }, 1500);
+    });
+
+    // Achievements scroll
+    const track = document.getElementById('achievementsTrack');
+    if (track) {
+      const clone = track.innerHTML;
+      track.innerHTML += clone;
+    }
+  </script>
+</body>
+</html>

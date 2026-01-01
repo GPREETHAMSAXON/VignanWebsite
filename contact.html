@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us | Centre for Innovation & Startups - VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="innovation.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
+        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
+        </a>
+        <div>
+          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="innovation.html" class="nav-item">Innovation Cell</a>
+        <a href="edcell.html" class="nav-item">ED Cell</a>
+        <a href="ipr.html" class="nav-item">IPR</a>
+        <a href="research.html" class="nav-item">R&D Cell</a>
+        <a href="idealab.html" class="nav-item">Idea Lab</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="events.html" class="nav-item">Events</a>
+        <a href="resources.html" class="nav-item">Resources</a>
+        <a href="contact.html" class="nav-item active">Contact</a>
+      </nav>
+
+      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50">Home</a>
+      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
+      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50">ED Cell</a>
+      <a href="ipr.html" class="block px-4 py-3 border-b hover:bg-gray-50">IPR</a>
+      <a href="research.html" class="block px-4 py-3 border-b hover:bg-gray-50">R&D Cell</a>
+      <a href="idealab.html" class="block px-4 py-3 border-b hover:bg-gray-50">Idea Lab</a>
+      <a href="projects.html" class="block px-4 py-3 border-b hover:bg-gray-50">Projects</a>
+      <a href="events.html" class="block px-4 py-3 border-b hover:bg-gray-50">Events</a>
+      <a href="resources.html" class="block px-4 py-3 border-b hover:bg-gray-50">Resources</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-gray-50 bg-blue-50 text-[#1e40af]">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero contact-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1 class="animate-fade-in">Contact Us</h1>
+      <p class="animate-fade-in-delay">Get in Touch with Our Innovation Team</p>
+      <div class="breadcrumb animate-fade-in-delay-2">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO CARDS -->
+  <section class="contact-info-section">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="contact-info-grid">
+        <div class="contact-info-card animate-on-scroll">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Visit Us</h3>
+          <p>Centre for Innovation & Startups<br>VIIT Campus, Beside VSEZ<br>Duvvada, Visakhapatnam - 530049</p>
+        </div>
+        <div class="contact-info-card animate-on-scroll delay-100">
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>Call Us</h3>
+          <p>Main: +91-08912755222<br>Innovation Cell: +91-9876543210<br>ED Cell: +91-9876543211</p>
+        </div>
+        <div class="contact-info-card animate-on-scroll delay-200">
+          <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email Us</h3>
+          <p>General: vignaniit@yahoo.com<br>Innovation: innovation@viit.ac.in<br>Startups: edcell@viit.ac.in</p>
+        </div>
+        <div class="contact-info-card animate-on-scroll delay-300">
+          <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>Working Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM DIRECTORY -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Our Team</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-600 mt-4">Meet the people driving innovation at VIIT</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card animate-on-scroll">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Dr. Rajesh Kumar</h3>
+          <p class="team-role">Director, Centre for Innovation</p>
+          <div class="team-contact">
+            <a href="mailto:director.innovation@viit.ac.in"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card animate-on-scroll delay-100">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Prof. Sunita Sharma</h3>
+          <p class="team-role">Innovation Cell Lead</p>
+          <div class="team-contact">
+            <a href="mailto:innovation@viit.ac.in"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919876543211"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card animate-on-scroll delay-200">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Dr. Venkat Rao</h3>
+          <p class="team-role">IPR Coordinator</p>
+          <div class="team-contact">
+            <a href="mailto:ipr@viit.ac.in"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919876543212"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card animate-on-scroll delay-300">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Prof. Priya Reddy</h3>
+          <p class="team-role">ED Cell Coordinator</p>
+          <div class="team-contact">
+            <a href="mailto:edcell@viit.ac.in"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919876543213"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card animate-on-scroll delay-400">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Dr. Arun Murthy</h3>
+          <p class="team-role">R&D Cell Head</p>
+          <div class="team-contact">
+            <a href="mailto:research@viit.ac.in"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919876543214"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card animate-on-scroll delay-500">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Mr. Suresh Kumar</h3>
+          <p class="team-role">Idea Lab Manager</p>
+          <div class="team-contact">
+            <a href="mailto:idealab@viit.ac.in"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919876543215"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INQUIRY FORMS -->
+  <section class="py-20 bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>Submit Your Inquiry</h2>
+        <p>Choose the type of inquiry and we'll connect you with the right team</p>
+      </div>
+
+      <div class="inquiry-tabs">
+        <button class="inquiry-tab active" data-tab="idea">
+          <i class="fa-solid fa-lightbulb"></i>
+          <span>Submit Idea</span>
+        </button>
+        <button class="inquiry-tab" data-tab="prototype">
+          <i class="fa-solid fa-cube"></i>
+          <span>Prototype Support</span>
+        </button>
+        <button class="inquiry-tab" data-tab="industry">
+          <i class="fa-solid fa-handshake"></i>
+          <span>Industry Collaboration</span>
+        </button>
+        <button class="inquiry-tab" data-tab="research">
+          <i class="fa-solid fa-flask"></i>
+          <span>Research Inquiry</span>
+        </button>
+      </div>
+
+      <div class="inquiry-form-container">
+        <!-- Submit Idea Form -->
+        <form class="inquiry-form active" id="ideaForm" data-form="idea">
+          <div class="form-header">
+            <h3><i class="fa-solid fa-lightbulb mr-2"></i>Submit Your Innovation Idea</h3>
+            <p>Share your innovative concept with us</p>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="Enter phone number" />
+            </div>
+            <div class="form-group">
+              <label>Department</label>
+              <select>
+                <option value="">Select Department</option>
+                <option value="cse">Computer Science</option>
+                <option value="ece">Electronics & Communication</option>
+                <option value="eee">Electrical Engineering</option>
+                <option value="mech">Mechanical Engineering</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label>Idea Title *</label>
+              <input type="text" placeholder="Brief title of your innovation" required />
+            </div>
+            <div class="form-group full-width">
+              <label>Idea Description *</label>
+              <textarea rows="4" placeholder="Describe your idea, problem it solves, and potential impact..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-paper-plane mr-2"></i>Submit Idea
+          </button>
+        </form>
+
+        <!-- Prototype Support Form -->
+        <form class="inquiry-form" id="prototypeForm" data-form="prototype">
+          <div class="form-header">
+            <h3><i class="fa-solid fa-cube mr-2"></i>Request Prototype Support</h3>
+            <p>Get access to our fabrication labs</p>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label>Project Title *</label>
+              <input type="text" placeholder="Enter project title" required />
+            </div>
+            <div class="form-group">
+              <label>Required Facility</label>
+              <select>
+                <option value="">Select Facility</option>
+                <option value="3d">3D Printing Lab</option>
+                <option value="pcb">PCB Fabrication</option>
+                <option value="iot">IoT Development Lab</option>
+                <option value="robotics">Robotics Lab</option>
+                <option value="medtech">MedTech Zone</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label>Prototype Requirements *</label>
+              <textarea rows="4" placeholder="Describe what you want to build and the support needed..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-paper-plane mr-2"></i>Request Support
+          </button>
+        </form>
+
+        <!-- Industry Collaboration Form -->
+        <form class="inquiry-form" id="industryForm" data-form="industry">
+          <div class="form-header">
+            <h3><i class="fa-solid fa-handshake mr-2"></i>Industry Collaboration</h3>
+            <p>Partner with us for research and innovation</p>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Contact Person *</label>
+              <input type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label>Company/Organization *</label>
+              <input type="text" placeholder="Enter company name" required />
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="Enter business email" required />
+            </div>
+            <div class="form-group">
+              <label>Phone *</label>
+              <input type="tel" placeholder="Enter phone number" required />
+            </div>
+            <div class="form-group">
+              <label>Collaboration Type</label>
+              <select>
+                <option value="">Select Type</option>
+                <option value="sponsored">Sponsored Research</option>
+                <option value="consulting">Consulting Project</option>
+                <option value="internship">Internship Program</option>
+                <option value="training">Corporate Training</option>
+                <option value="equipment">Equipment Donation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Industry Sector</label>
+              <select>
+                <option value="">Select Sector</option>
+                <option value="it">IT/Software</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="energy">Energy</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label>Collaboration Details *</label>
+              <textarea rows="4" placeholder="Describe the proposed collaboration and expected outcomes..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-paper-plane mr-2"></i>Submit Proposal
+          </button>
+        </form>
+
+        <!-- Research Inquiry Form -->
+        <form class="inquiry-form" id="researchForm" data-form="research">
+          <div class="form-header">
+            <h3><i class="fa-solid fa-flask mr-2"></i>Research / Internship Inquiry</h3>
+            <p>Join our research initiatives</p>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label>Current Institution</label>
+              <input type="text" placeholder="Enter your institution" />
+            </div>
+            <div class="form-group">
+              <label>Inquiry Type</label>
+              <select>
+                <option value="">Select Type</option>
+                <option value="phd">PhD Opportunities</option>
+                <option value="postdoc">Post-Doctoral Research</option>
+                <option value="internship">Research Internship</option>
+                <option value="collaboration">Research Collaboration</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Research Area</label>
+              <select>
+                <option value="">Select Area</option>
+                <option value="ai">AI/Machine Learning</option>
+                <option value="iot">IoT/Embedded Systems</option>
+                <option value="robotics">Robotics</option>
+                <option value="healthcare">Healthcare Tech</option>
+                <option value="energy">Energy/Sustainability</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Attach Resume (Optional)</label>
+              <input type="file" accept=".pdf,.doc,.docx" />
+            </div>
+            <div class="form-group full-width">
+              <label>Research Interest / Proposal *</label>
+              <textarea rows="4" placeholder="Describe your research interests and any specific proposals..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-paper-plane mr-2"></i>Submit Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Find Us</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="map-container">
+        <div class="map-placeholder">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h3>VIIT Campus</h3>
+          <p>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+          <a href="https://maps.google.com" target="_blank" class="map-btn">
+            <i class="fa-solid fa-directions mr-2"></i>Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SCROLL -->
+  <section class="achievements-scroll-section">
+    <div class="achievements-scroll-container">
+      <div class="achievements-scroll-track" id="achievementsTrack">
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Smart India Hackathon Winners 2025</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-medal"></i>
+          <span>Best Innovation Hub Award - AICTE</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-award"></i>
+          <span>₹67 Crore Research Grants</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-certificate"></i>
+          <span>45+ Patents Filed</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-rocket"></i>
+          <span>25 Startups Incubated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Vignan_logo_only.png" alt="Vignan Logo" class="h-12" />
+            <div>
+              <h3 class="text-white font-bold text-lg">VIGNAN</h3>
+              <p class="text-sm">Centre for Innovation & Startups</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">Vignan's Institute of Information Technology (Autonomous)</p>
+          <div class="space-y-2 text-sm">
+            <p><i class="fa-solid fa-location-dot mr-2 text-[#60a5fa]"></i>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+            <p><i class="fa-solid fa-envelope mr-2 text-[#60a5fa]"></i>vignaniit@yahoo.com</p>
+            <p><i class="fa-solid fa-phone mr-2 text-[#60a5fa]"></i>+91-08912755222</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="innovation.html" class="hover:text-white transition">Innovation Cell</a></li>
+            <li><a href="edcell.html" class="hover:text-white transition">ED Cell</a></li>
+            <li><a href="ipr.html" class="hover:text-white transition">IPR Cell</a></li>
+            <li><a href="research.html" class="hover:text-white transition">R&D Cell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="idealab.html" class="hover:text-white transition">Idea Lab</a></li>
+            <li><a href="projects.html" class="hover:text-white transition">Projects</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events</a></li>
+            <li><a href="resources.html" class="hover:text-white transition">Resources</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-sm">
+      <p>&copy; 2026 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // Inquiry Tabs
+    const inquiryTabs = document.querySelectorAll('.inquiry-tab');
+    const inquiryForms = document.querySelectorAll('.inquiry-form');
+
+    inquiryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        inquiryTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        const targetForm = tab.dataset.tab;
+        inquiryForms.forEach(form => {
+          form.classList.remove('active');
+          if (form.dataset.form === targetForm) {
+            form.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Form Submissions
+    document.querySelectorAll('.inquiry-form').forEach(form => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('.submit-btn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>Submitting...';
+        setTimeout(() => {
+          btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i>Submitted Successfully!';
+          btn.style.background = '#10b981';
+          setTimeout(() => {
+            form.reset();
+            btn.innerHTML = originalText;
+            btn.style.background = '';
+          }, 2000);
+        }, 1500);
+      });
+    });
+
+    // Achievements scroll
+    const track = document.getElementById('achievementsTrack');
+    if (track) {
+      const clone = track.innerHTML;
+      track.innerHTML += clone;
+    }
+  </script>
+</body>
+</html>

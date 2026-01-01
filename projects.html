@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects & Startups | Centre for Innovation & Startups - VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="innovation.css" />
+  <link rel="stylesheet" href="projects.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
+        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
+        </a>
+        <div>
+          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="innovation.html" class="nav-item">Innovation Cell</a>
+        <a href="edcell.html" class="nav-item">ED Cell</a>
+        <a href="ipr.html" class="nav-item">IPR</a>
+        <a href="research.html" class="nav-item">R&D Cell</a>
+        <a href="idealab.html" class="nav-item">Idea Lab</a>
+        <a href="projects.html" class="nav-item active">Projects</a>
+        <a href="events.html" class="nav-item">Events</a>
+        <a href="resources.html" class="nav-item">Resources</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50">Home</a>
+      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
+      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50">ED Cell</a>
+      <a href="ipr.html" class="block px-4 py-3 border-b hover:bg-gray-50">IPR</a>
+      <a href="research.html" class="block px-4 py-3 border-b hover:bg-gray-50">R&D Cell</a>
+      <a href="idealab.html" class="block px-4 py-3 border-b hover:bg-gray-50">Idea Lab</a>
+      <a href="projects.html" class="block px-4 py-3 border-b hover:bg-gray-50 bg-blue-50 text-[#1e40af]">Projects</a>
+      <a href="events.html" class="block px-4 py-3 border-b hover:bg-gray-50">Events</a>
+      <a href="resources.html" class="block px-4 py-3 border-b hover:bg-gray-50">Resources</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-gray-50">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero projects-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="page-hero-content">
+      <h1 class="animate-fade-in">Projects & Startups</h1>
+      <p class="animate-fade-in-delay">Showcasing Innovation & Entrepreneurial Success</p>
+      <div class="breadcrumb animate-fade-in-delay-2">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Projects</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="stats-bar-grid">
+        <div class="stat-bar-item">
+          <span class="stat-number" data-target="150">0</span>
+          <span class="stat-text">Projects Completed</span>
+        </div>
+        <div class="stat-bar-item">
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-text">Startups Launched</span>
+        </div>
+        <div class="stat-bar-item">
+          <span class="stat-number" data-target="45">0</span>
+          <span class="stat-text">Patents Filed</span>
+        </div>
+        <div class="stat-bar-item">
+          <span class="stat-number" data-target="67">0</span>
+          <span class="stat-text">Cr Funding</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SHOWCASE -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Innovation Showcase</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="software">
+          <i class="fa-solid fa-code"></i> Software
+        </button>
+        <button class="filter-btn" data-filter="hardware">
+          <i class="fa-solid fa-microchip"></i> Hardware
+        </button>
+        <button class="filter-btn" data-filter="healthcare">
+          <i class="fa-solid fa-heart-pulse"></i> Healthcare
+        </button>
+        <button class="filter-btn" data-filter="agritech">
+          <i class="fa-solid fa-seedling"></i> AgriTech
+        </button>
+        <button class="filter-btn" data-filter="industry">
+          <i class="fa-solid fa-industry"></i> Industry 4.0
+        </button>
+        <button class="filter-btn" data-filter="energy">
+          <i class="fa-solid fa-bolt"></i> Energy
+        </button>
+        <button class="filter-btn" data-filter="aiml">
+          <i class="fa-solid fa-brain"></i> AI/ML
+        </button>
+        <button class="filter-btn" data-filter="iot">
+          <i class="fa-solid fa-wifi"></i> IoT
+        </button>
+      </div>
+
+      <!-- Search -->
+      <div class="project-search">
+        <i class="fa-solid fa-search"></i>
+        <input type="text" id="projectSearch" placeholder="Search projects by name, team, or technology..." />
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-showcase-grid" id="projectsGrid">
+        <div class="project-showcase-card animate-on-scroll" data-category="aiml healthcare">
+          <div class="project-image">
+            <div class="project-placeholder aiml">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag aiml">AI/ML</span>
+              <span class="tag healthcare">Healthcare</span>
+            </div>
+            <h3>MedVision AI</h3>
+            <p>AI-powered medical imaging analysis for early disease detection using deep learning.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: Dr. K. Ramesh, S. Kumar</span>
+            </div>
+            <div class="project-meta">
+              <span class="status funded">Funded</span>
+              <span class="patent"><i class="fa-solid fa-certificate"></i> Patent Filed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase-card animate-on-scroll delay-100" data-category="iot agritech">
+          <div class="project-image">
+            <div class="project-placeholder iot">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag iot">IoT</span>
+              <span class="tag agritech">AgriTech</span>
+            </div>
+            <h3>SmartFarm Monitor</h3>
+            <p>IoT-based precision agriculture system with soil sensors and automated irrigation.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: P. Reddy, Team Alpha</span>
+            </div>
+            <div class="project-meta">
+              <span class="status startup">Startup</span>
+              <span class="patent"><i class="fa-solid fa-certificate"></i> Patent Granted</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase-card animate-on-scroll delay-200" data-category="hardware energy">
+          <div class="project-image">
+            <div class="project-placeholder energy">
+              <i class="fa-solid fa-solar-panel"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag hardware">Hardware</span>
+              <span class="tag energy">Energy</span>
+            </div>
+            <h3>SolarMax Tracker</h3>
+            <p>Dual-axis solar panel tracking system with 40% efficiency improvement.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: Prof. M. Rao, EEE Dept</span>
+            </div>
+            <div class="project-meta">
+              <span class="status prototype">Prototype</span>
+              <span class="patent"><i class="fa-solid fa-certificate"></i> Patent Filed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase-card animate-on-scroll delay-300" data-category="software industry">
+          <div class="project-image">
+            <div class="project-placeholder software">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag software">Software</span>
+              <span class="tag industry">Industry 4.0</span>
+            </div>
+            <h3>BlockChain SCM</h3>
+            <p>Blockchain-based supply chain management for transparent logistics tracking.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: Dr. V. Naidu, R. Patel</span>
+            </div>
+            <div class="project-meta">
+              <span class="status funded">Funded</span>
+              <span class="patent"><i class="fa-solid fa-certificate"></i> Published</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase-card animate-on-scroll delay-400" data-category="hardware healthcare">
+          <div class="project-image">
+            <div class="project-placeholder healthcare">
+              <i class="fa-solid fa-heartbeat"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag hardware">Hardware</span>
+              <span class="tag healthcare">Healthcare</span>
+            </div>
+            <h3>VitalWear Pro</h3>
+            <p>Wearable health monitoring device with real-time vital sign tracking.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: Dr. S. Venkat, MedTech</span>
+            </div>
+            <div class="project-meta">
+              <span class="status startup">Startup</span>
+              <span class="patent"><i class="fa-solid fa-certificate"></i> Patent Filed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase-card animate-on-scroll delay-500" data-category="aiml software">
+          <div class="project-image">
+            <div class="project-placeholder aiml">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag aiml">AI/ML</span>
+              <span class="tag software">Software</span>
+            </div>
+            <h3>TeluguNLP</h3>
+            <p>Natural language processing toolkit for Telugu language with speech recognition.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: CSE NLP Lab</span>
+            </div>
+            <div class="project-meta">
+              <span class="status research">Research</span>
+              <span class="patent"><i class="fa-solid fa-book"></i> 5 Publications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase-card animate-on-scroll" data-category="iot industry">
+          <div class="project-image">
+            <div class="project-placeholder industry">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag iot">IoT</span>
+              <span class="tag industry">Industry 4.0</span>
+            </div>
+            <h3>SmartFactory IIoT</h3>
+            <p>Industrial IoT platform for predictive maintenance and real-time monitoring.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: MECH-ECE Collab</span>
+            </div>
+            <div class="project-meta">
+              <span class="status funded">Funded</span>
+              <span class="patent"><i class="fa-solid fa-industry"></i> Industry Partner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase-card animate-on-scroll delay-100" data-category="hardware iot">
+          <div class="project-image">
+            <div class="project-placeholder hardware">
+              <i class="fa-solid fa-drone"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag hardware">Hardware</span>
+              <span class="tag iot">IoT</span>
+            </div>
+            <h3>AgriDrone AI</h3>
+            <p>Autonomous agricultural drone with AI-based crop health monitoring.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: Prof. J. Singh, Robotics Lab</span>
+            </div>
+            <div class="project-meta">
+              <span class="status prototype">Prototype</span>
+              <span class="patent"><i class="fa-solid fa-certificate"></i> Patent Granted</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-showcase-card animate-on-scroll delay-200" data-category="energy hardware">
+          <div class="project-image">
+            <div class="project-placeholder energy">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag energy">Energy</span>
+              <span class="tag hardware">Hardware</span>
+            </div>
+            <h3>BioFuel Generator</h3>
+            <p>Biodiesel production system from agricultural waste with 95% conversion rate.</p>
+            <div class="project-team">
+              <i class="fa-solid fa-users"></i>
+              <span>Team: Dr. A. Sharma, Chem Dept</span>
+            </div>
+            <div class="project-meta">
+              <span class="status funded">Funded</span>
+              <span class="patent"><i class="fa-solid fa-certificate"></i> Patent Filed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#" class="btn-primary">View All Projects <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STARTUP SPOTLIGHT -->
+  <section class="py-20 bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>Startup Spotlight</h2>
+        <p>Success stories from our incubation program</p>
+      </div>
+
+      <div class="startups-carousel" id="startupsCarousel">
+        <div class="startup-spotlight-card">
+          <div class="startup-logo-placeholder">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <div class="startup-info">
+            <h3>AgriSense Technologies</h3>
+            <p>IoT solutions for precision agriculture</p>
+            <div class="startup-metrics">
+              <div class="metric">
+                <span class="value">₹2.5Cr</span>
+                <span class="label">Funding</span>
+              </div>
+              <div class="metric">
+                <span class="value">15+</span>
+                <span class="label">Employees</span>
+              </div>
+              <div class="metric">
+                <span class="value">500+</span>
+                <span class="label">Farmers</span>
+              </div>
+            </div>
+            <div class="startup-founders">
+              <i class="fa-solid fa-user"></i> Founded by: Rahul K., Priya S.
+            </div>
+          </div>
+        </div>
+
+        <div class="startup-spotlight-card">
+          <div class="startup-logo-placeholder">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <div class="startup-info">
+            <h3>HealthTrack AI</h3>
+            <p>AI-powered diagnostic solutions</p>
+            <div class="startup-metrics">
+              <div class="metric">
+                <span class="value">₹5Cr</span>
+                <span class="label">Valuation</span>
+              </div>
+              <div class="metric">
+                <span class="value">8</span>
+                <span class="label">Employees</span>
+              </div>
+              <div class="metric">
+                <span class="value">10K+</span>
+                <span class="label">Users</span>
+              </div>
+            </div>
+            <div class="startup-founders">
+              <i class="fa-solid fa-user"></i> Founded by: Dr. Arun M.
+            </div>
+          </div>
+        </div>
+
+        <div class="startup-spotlight-card">
+          <div class="startup-logo-placeholder">
+            <i class="fa-solid fa-solar-panel"></i>
+          </div>
+          <div class="startup-info">
+            <h3>GreenPower Solutions</h3>
+            <p>Renewable energy systems</p>
+            <div class="startup-metrics">
+              <div class="metric">
+                <span class="value">₹3.2Cr</span>
+                <span class="label">Funding</span>
+              </div>
+              <div class="metric">
+                <span class="value">12</span>
+                <span class="label">Employees</span>
+              </div>
+              <div class="metric">
+                <span class="value">50+</span>
+                <span class="label">Installations</span>
+              </div>
+            </div>
+            <div class="startup-founders">
+              <i class="fa-solid fa-user"></i> Founded by: Vijay R., Team EEE
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SCROLL -->
+  <section class="achievements-scroll-section">
+    <div class="achievements-scroll-container">
+      <div class="achievements-scroll-track" id="achievementsTrack">
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Smart India Hackathon Winners 2025</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-medal"></i>
+          <span>Best Innovation Hub Award - AICTE</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-award"></i>
+          <span>₹67 Crore Research Grants</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-certificate"></i>
+          <span>45+ Patents Filed</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-rocket"></i>
+          <span>25 Startups Incubated</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-star"></i>
+          <span>NAAC A++ Accredited</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Vignan_logo_only.png" alt="Vignan Logo" class="h-12" />
+            <div>
+              <h3 class="text-white font-bold text-lg">VIGNAN</h3>
+              <p class="text-sm">Centre for Innovation & Startups</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">Vignan's Institute of Information Technology (Autonomous)</p>
+          <div class="space-y-2 text-sm">
+            <p><i class="fa-solid fa-location-dot mr-2 text-[#60a5fa]"></i>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+            <p><i class="fa-solid fa-envelope mr-2 text-[#60a5fa]"></i>vignaniit@yahoo.com</p>
+            <p><i class="fa-solid fa-phone mr-2 text-[#60a5fa]"></i>+91-08912755222</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="innovation.html" class="hover:text-white transition">Innovation Cell</a></li>
+            <li><a href="edcell.html" class="hover:text-white transition">ED Cell</a></li>
+            <li><a href="ipr.html" class="hover:text-white transition">IPR Cell</a></li>
+            <li><a href="research.html" class="hover:text-white transition">R&D Cell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="idealab.html" class="hover:text-white transition">Idea Lab</a></li>
+            <li><a href="projects.html" class="hover:text-white transition">Projects</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events</a></li>
+            <li><a href="resources.html" class="hover:text-white transition">Resources</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-sm">
+      <p>&copy; 2026 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // Counter Animation
+    const statNumbers = document.querySelectorAll('.stat-number');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseInt(counter.getAttribute('data-target'));
+          const duration = 2000;
+          const step = target / (duration / 16);
+          let current = 0;
+
+          const updateCounter = () => {
+            current += step;
+            if (current < target) {
+              counter.textContent = Math.floor(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          };
+          updateCounter();
+          counterObserver.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(counter => counterObserver.observe(counter));
+
+    // Project Filters
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-showcase-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        
+        projectCards.forEach(card => {
+          const categories = card.dataset.category;
+          if (filter === 'all' || categories.includes(filter)) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeInUp 0.5s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Search
+    const projectSearch = document.getElementById('projectSearch');
+    projectSearch?.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      projectCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+
+    // Achievements scroll
+    const track = document.getElementById('achievementsTrack');
+    if (track) {
+      const clone = track.innerHTML;
+      track.innerHTML += clone;
+    }
+  </script>
+</body>
+</html>

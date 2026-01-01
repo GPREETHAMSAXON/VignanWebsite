@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resources & Downloads | Centre for Innovation & Startups - VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="innovation.css" />
+  <link rel="stylesheet" href="resources.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
+        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
+        </a>
+        <div>
+          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="innovation.html" class="nav-item">Innovation Cell</a>
+        <a href="edcell.html" class="nav-item">ED Cell</a>
+        <a href="ipr.html" class="nav-item">IPR</a>
+        <a href="research.html" class="nav-item">R&D Cell</a>
+        <a href="idealab.html" class="nav-item">Idea Lab</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="events.html" class="nav-item">Events</a>
+        <a href="resources.html" class="nav-item active">Resources</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50">Home</a>
+      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
+      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50">ED Cell</a>
+      <a href="ipr.html" class="block px-4 py-3 border-b hover:bg-gray-50">IPR</a>
+      <a href="research.html" class="block px-4 py-3 border-b hover:bg-gray-50">R&D Cell</a>
+      <a href="idealab.html" class="block px-4 py-3 border-b hover:bg-gray-50">Idea Lab</a>
+      <a href="projects.html" class="block px-4 py-3 border-b hover:bg-gray-50">Projects</a>
+      <a href="events.html" class="block px-4 py-3 border-b hover:bg-gray-50">Events</a>
+      <a href="resources.html" class="block px-4 py-3 border-b hover:bg-gray-50 bg-blue-50 text-[#1e40af]">Resources</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-gray-50">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero resources-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="floating-docs">
+      <i class="fa-solid fa-file-pdf floating-doc"></i>
+      <i class="fa-solid fa-file-word floating-doc"></i>
+      <i class="fa-solid fa-file-excel floating-doc"></i>
+      <i class="fa-solid fa-folder-open floating-doc"></i>
+    </div>
+    <div class="page-hero-content">
+      <h1 class="animate-fade-in">Resources & Downloads</h1>
+      <p class="animate-fade-in-delay">Templates, Forms, Guidelines & Policy Documents</p>
+      <div class="breadcrumb animate-fade-in-delay-2">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Resources</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH BAR -->
+  <section class="resource-search-section">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="resource-search">
+        <i class="fa-solid fa-search"></i>
+        <input type="text" id="resourceSearch" placeholder="Search resources by name or category..." />
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCE CATEGORIES -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Download Categories</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="resource-categories-grid">
+        <!-- Project Templates -->
+        <div class="resource-category animate-on-scroll">
+          <div class="category-header">
+            <div class="category-icon templates"><i class="fa-solid fa-file-lines"></i></div>
+            <div>
+              <h3>Project Templates</h3>
+              <span class="file-count">8 Files</span>
+            </div>
+          </div>
+          <div class="resource-list">
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Project Proposal Template</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-word"></i>
+                <span>Project Report Format</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-excel"></i>
+                <span>Budget Template</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-powerpoint"></i>
+                <span>Project Presentation Template</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Funding Guidelines -->
+        <div class="resource-category animate-on-scroll delay-100">
+          <div class="category-header">
+            <div class="category-icon funding"><i class="fa-solid fa-coins"></i></div>
+            <div>
+              <h3>Funding Guidelines</h3>
+              <span class="file-count">6 Files</span>
+            </div>
+          </div>
+          <div class="resource-list">
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>AICTE Funding Guidelines</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>DST Grant Application</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Startup India Scheme</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>MSME Support Schemes</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- IPR Forms -->
+        <div class="resource-category animate-on-scroll delay-200">
+          <div class="category-header">
+            <div class="category-icon ipr"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <h3>IPR Filing Forms</h3>
+              <span class="file-count">10 Files</span>
+            </div>
+          </div>
+          <div class="resource-list">
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Patent Application Form 1</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Invention Disclosure Form</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Copyright Registration Form</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Trademark Application</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Startup Forms -->
+        <div class="resource-category animate-on-scroll delay-300">
+          <div class="category-header">
+            <div class="category-icon startup"><i class="fa-solid fa-rocket"></i></div>
+            <div>
+              <h3>Startup Registration</h3>
+              <span class="file-count">7 Files</span>
+            </div>
+          </div>
+          <div class="resource-list">
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Incubation Application Form</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-word"></i>
+                <span>Business Plan Template</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>MoU Format</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Equity Agreement Template</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Thinking -->
+        <div class="resource-category animate-on-scroll delay-400">
+          <div class="category-header">
+            <div class="category-icon design"><i class="fa-solid fa-lightbulb"></i></div>
+            <div>
+              <h3>Design Thinking</h3>
+              <span class="file-count">5 Files</span>
+            </div>
+          </div>
+          <div class="resource-list">
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Empathy Map Worksheet</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Problem Statement Canvas</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Ideation Worksheet</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Business Model Canvas</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Policy Documents -->
+        <div class="resource-category animate-on-scroll delay-500">
+          <div class="category-header">
+            <div class="category-icon policy"><i class="fa-solid fa-gavel"></i></div>
+            <div>
+              <h3>Policy Documents</h3>
+              <span class="file-count">8 Files</span>
+            </div>
+          </div>
+          <div class="resource-list">
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>VIIT Startup Policy 2025</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>IPR Handbook</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Research Ethics Policy</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="resource-item">
+              <div class="resource-info">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Incubation Guidelines</span>
+              </div>
+              <a href="#" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROTOTYPE GUIDELINES -->
+  <section class="py-20 bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>Prototype Development Guidelines</h2>
+        <p>Essential resources for building your innovation</p>
+      </div>
+
+      <div class="prototype-resources-grid">
+        <div class="prototype-resource-card animate-on-scroll">
+          <div class="resource-icon"><i class="fa-solid fa-cube"></i></div>
+          <h3>3D Printing Guide</h3>
+          <p>Complete guide to using FDM and SLA printers in our lab</p>
+          <ul class="resource-checklist">
+            <li><i class="fa-solid fa-check"></i> Material selection guide</li>
+            <li><i class="fa-solid fa-check"></i> Print settings optimization</li>
+            <li><i class="fa-solid fa-check"></i> Post-processing techniques</li>
+          </ul>
+          <a href="#" class="resource-download-btn">Download Guide <i class="fa-solid fa-download ml-2"></i></a>
+        </div>
+
+        <div class="prototype-resource-card animate-on-scroll delay-100">
+          <div class="resource-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>PCB Design Manual</h3>
+          <p>From schematic to fabrication - complete PCB workflow</p>
+          <ul class="resource-checklist">
+            <li><i class="fa-solid fa-check"></i> EagleCAD tutorials</li>
+            <li><i class="fa-solid fa-check"></i> Design rules checklist</li>
+            <li><i class="fa-solid fa-check"></i> Fabrication specifications</li>
+          </ul>
+          <a href="#" class="resource-download-btn">Download Manual <i class="fa-solid fa-download ml-2"></i></a>
+        </div>
+
+        <div class="prototype-resource-card animate-on-scroll delay-200">
+          <div class="resource-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Robotics Starter Kit</h3>
+          <p>Getting started with robotics development in our lab</p>
+          <ul class="resource-checklist">
+            <li><i class="fa-solid fa-check"></i> Component catalog</li>
+            <li><i class="fa-solid fa-check"></i> Assembly guides</li>
+            <li><i class="fa-solid fa-check"></i> Programming tutorials</li>
+          </ul>
+          <a href="#" class="resource-download-btn">Download Kit <i class="fa-solid fa-download ml-2"></i></a>
+        </div>
+
+        <div class="prototype-resource-card animate-on-scroll delay-300">
+          <div class="resource-icon"><i class="fa-solid fa-wifi"></i></div>
+          <h3>IoT Development Guide</h3>
+          <p>Build connected devices with our sensor library</p>
+          <ul class="resource-checklist">
+            <li><i class="fa-solid fa-check"></i> Sensor datasheets</li>
+            <li><i class="fa-solid fa-check"></i> Communication protocols</li>
+            <li><i class="fa-solid fa-check"></i> Cloud integration</li>
+          </ul>
+          <a href="#" class="resource-download-btn">Download Guide <i class="fa-solid fa-download ml-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSHOP MATERIALS -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Workshop Materials</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-600 mt-4">Presentations and materials from past workshops</p>
+      </div>
+
+      <div class="workshop-materials-grid">
+        <div class="workshop-material-card animate-on-scroll">
+          <div class="material-icon"><i class="fa-solid fa-brain"></i></div>
+          <h4>AI/ML Fundamentals</h4>
+          <span class="material-date">January 2026</span>
+          <div class="material-files">
+            <a href="#"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
+            <a href="#"><i class="fa-solid fa-code"></i> Code</a>
+            <a href="#"><i class="fa-solid fa-video"></i> Video</a>
+          </div>
+        </div>
+
+        <div class="workshop-material-card animate-on-scroll delay-100">
+          <div class="material-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h4>Cloud Computing</h4>
+          <span class="material-date">December 2025</span>
+          <div class="material-files">
+            <a href="#"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
+            <a href="#"><i class="fa-solid fa-code"></i> Code</a>
+            <a href="#"><i class="fa-solid fa-video"></i> Video</a>
+          </div>
+        </div>
+
+        <div class="workshop-material-card animate-on-scroll delay-200">
+          <div class="material-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Cybersecurity Basics</h4>
+          <span class="material-date">November 2025</span>
+          <div class="material-files">
+            <a href="#"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
+            <a href="#"><i class="fa-solid fa-code"></i> Code</a>
+            <a href="#"><i class="fa-solid fa-video"></i> Video</a>
+          </div>
+        </div>
+
+        <div class="workshop-material-card animate-on-scroll delay-300">
+          <div class="material-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h4>Mobile App Development</h4>
+          <span class="material-date">October 2025</span>
+          <div class="material-files">
+            <a href="#"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
+            <a href="#"><i class="fa-solid fa-code"></i> Code</a>
+            <a href="#"><i class="fa-solid fa-video"></i> Video</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="#" class="btn-primary">View All Materials <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SCROLL -->
+  <section class="achievements-scroll-section">
+    <div class="achievements-scroll-container">
+      <div class="achievements-scroll-track" id="achievementsTrack">
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Smart India Hackathon Winners 2025</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-medal"></i>
+          <span>Best Innovation Hub Award - AICTE</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-award"></i>
+          <span>₹67 Crore Research Grants</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-certificate"></i>
+          <span>45+ Patents Filed</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-rocket"></i>
+          <span>25 Startups Incubated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Vignan_logo_only.png" alt="Vignan Logo" class="h-12" />
+            <div>
+              <h3 class="text-white font-bold text-lg">VIGNAN</h3>
+              <p class="text-sm">Centre for Innovation & Startups</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">Vignan's Institute of Information Technology (Autonomous)</p>
+          <div class="space-y-2 text-sm">
+            <p><i class="fa-solid fa-location-dot mr-2 text-[#60a5fa]"></i>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+            <p><i class="fa-solid fa-envelope mr-2 text-[#60a5fa]"></i>vignaniit@yahoo.com</p>
+            <p><i class="fa-solid fa-phone mr-2 text-[#60a5fa]"></i>+91-08912755222</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="innovation.html" class="hover:text-white transition">Innovation Cell</a></li>
+            <li><a href="edcell.html" class="hover:text-white transition">ED Cell</a></li>
+            <li><a href="ipr.html" class="hover:text-white transition">IPR Cell</a></li>
+            <li><a href="research.html" class="hover:text-white transition">R&D Cell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="idealab.html" class="hover:text-white transition">Idea Lab</a></li>
+            <li><a href="projects.html" class="hover:text-white transition">Projects</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events</a></li>
+            <li><a href="resources.html" class="hover:text-white transition">Resources</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-sm">
+      <p>&copy; 2026 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // Search functionality
+    const resourceSearch = document.getElementById('resourceSearch');
+    const resourceCategories = document.querySelectorAll('.resource-category');
+
+    resourceSearch?.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      resourceCategories.forEach(category => {
+        const text = category.textContent.toLowerCase();
+        category.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+
+    // Achievements scroll
+    const track = document.getElementById('achievementsTrack');
+    if (track) {
+      const clone = track.innerHTML;
+      track.innerHTML += clone;
+    }
+  </script>
+</body>
+</html>

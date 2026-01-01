@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Events & Programs | Centre for Innovation & Startups - VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="innovation.css" />
+  <link rel="stylesheet" href="events.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
+        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
+        </a>
+        <div>
+          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="innovation.html" class="nav-item">Innovation Cell</a>
+        <a href="edcell.html" class="nav-item">ED Cell</a>
+        <a href="ipr.html" class="nav-item">IPR</a>
+        <a href="research.html" class="nav-item">R&D Cell</a>
+        <a href="idealab.html" class="nav-item">Idea Lab</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="events.html" class="nav-item active">Events</a>
+        <a href="resources.html" class="nav-item">Resources</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50">Home</a>
+      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
+      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50">ED Cell</a>
+      <a href="ipr.html" class="block px-4 py-3 border-b hover:bg-gray-50">IPR</a>
+      <a href="research.html" class="block px-4 py-3 border-b hover:bg-gray-50">R&D Cell</a>
+      <a href="idealab.html" class="block px-4 py-3 border-b hover:bg-gray-50">Idea Lab</a>
+      <a href="projects.html" class="block px-4 py-3 border-b hover:bg-gray-50">Projects</a>
+      <a href="events.html" class="block px-4 py-3 border-b hover:bg-gray-50 bg-blue-50 text-[#1e40af]">Events</a>
+      <a href="resources.html" class="block px-4 py-3 border-b hover:bg-gray-50">Resources</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-gray-50">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero events-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="confetti-animation" id="confettiContainer"></div>
+    <div class="page-hero-content">
+      <h1 class="animate-fade-in">Events & Programs</h1>
+      <p class="animate-fade-in-delay">Empowering Innovation Through Learning & Collaboration</p>
+      <div class="breadcrumb animate-fade-in-delay-2">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Events</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING EVENTS BANNER -->
+  <section class="upcoming-banner">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="banner-content">
+        <div class="banner-icon"><i class="fa-solid fa-bullhorn"></i></div>
+        <div class="banner-text">
+          <span class="banner-label">Upcoming</span>
+          <h3>Smart India Hackathon 2026 - Internal Round</h3>
+          <p>February 15-16, 2026 | Register Now!</p>
+        </div>
+        <a href="#" class="banner-btn">Register <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS CALENDAR -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Events Calendar</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="calendar-container">
+        <div class="calendar-header">
+          <button class="calendar-nav" id="prevMonth"><i class="fa-solid fa-chevron-left"></i></button>
+          <h3 id="currentMonth">February 2026</h3>
+          <button class="calendar-nav" id="nextMonth"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="calendar-grid">
+          <div class="calendar-day-header">Sun</div>
+          <div class="calendar-day-header">Mon</div>
+          <div class="calendar-day-header">Tue</div>
+          <div class="calendar-day-header">Wed</div>
+          <div class="calendar-day-header">Thu</div>
+          <div class="calendar-day-header">Fri</div>
+          <div class="calendar-day-header">Sat</div>
+          <!-- Calendar days will be populated by JS -->
+        </div>
+        <div class="calendar-legend">
+          <span class="legend-item"><span class="dot hackathon"></span>Hackathon</span>
+          <span class="legend-item"><span class="dot workshop"></span>Workshop</span>
+          <span class="legend-item"><span class="dot bootcamp"></span>Bootcamp</span>
+          <span class="legend-item"><span class="dot expo"></span>Expo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT CATEGORIES -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Program Categories</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="event-categories-grid">
+        <div class="event-category-card animate-on-scroll" data-category="hackathons">
+          <div class="category-icon hackathon"><i class="fa-solid fa-code"></i></div>
+          <h3>Hackathons & Ideathons</h3>
+          <p>48-hour coding marathons to solve real-world problems</p>
+          <div class="category-stats">
+            <span><i class="fa-solid fa-calendar"></i> 4 Events/Year</span>
+            <span><i class="fa-solid fa-users"></i> 500+ Participants</span>
+          </div>
+          <div class="category-events">
+            <div class="mini-event">
+              <span class="date">Feb 15-16</span>
+              <span class="name">SIH Internal Round</span>
+            </div>
+            <div class="mini-event">
+              <span class="date">Apr 10-11</span>
+              <span class="name">InnoHack 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-category-card animate-on-scroll delay-100" data-category="workshops">
+          <div class="category-icon workshop"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <h3>FDP/Workshops</h3>
+          <p>Faculty development and skill enhancement programs</p>
+          <div class="category-stats">
+            <span><i class="fa-solid fa-calendar"></i> 12 Events/Year</span>
+            <span><i class="fa-solid fa-users"></i> 200+ Participants</span>
+          </div>
+          <div class="category-events">
+            <div class="mini-event">
+              <span class="date">Feb 20-22</span>
+              <span class="name">AI/ML Workshop</span>
+            </div>
+            <div class="mini-event">
+              <span class="date">Mar 5-7</span>
+              <span class="name">IoT FDP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-category-card animate-on-scroll delay-200" data-category="bootcamps">
+          <div class="category-icon bootcamp"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Bootcamps</h3>
+          <p>Intensive training programs for in-demand skills</p>
+          <div class="category-stats">
+            <span><i class="fa-solid fa-calendar"></i> 6 Events/Year</span>
+            <span><i class="fa-solid fa-clock"></i> 40+ Hours Each</span>
+          </div>
+          <div class="category-events">
+            <div class="mini-event">
+              <span class="date">Mar 15-25</span>
+              <span class="name">Full Stack Bootcamp</span>
+            </div>
+            <div class="mini-event">
+              <span class="date">May 1-10</span>
+              <span class="name">Data Science Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-category-card animate-on-scroll delay-300" data-category="expo">
+          <div class="category-icon expo"><i class="fa-solid fa-trophy"></i></div>
+          <h3>Demo Day & Expo</h3>
+          <p>Showcase innovations to industry and investors</p>
+          <div class="category-stats">
+            <span><i class="fa-solid fa-calendar"></i> 2 Events/Year</span>
+            <span><i class="fa-solid fa-building"></i> 50+ Companies</span>
+          </div>
+          <div class="category-events">
+            <div class="mini-event">
+              <span class="date">Apr 26</span>
+              <span class="name">Innovation Day 2026</span>
+            </div>
+            <div class="mini-event">
+              <span class="date">Oct 15</span>
+              <span class="name">Startup Expo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-category-card animate-on-scroll delay-400" data-category="patent">
+          <div class="category-icon patent"><i class="fa-solid fa-certificate"></i></div>
+          <h3>Patent Clinics</h3>
+          <p>One-on-one sessions with patent attorneys</p>
+          <div class="category-stats">
+            <span><i class="fa-solid fa-calendar"></i> Monthly</span>
+            <span><i class="fa-solid fa-file-signature"></i> Free Consultation</span>
+          </div>
+          <div class="category-events">
+            <div class="mini-event">
+              <span class="date">Feb 25</span>
+              <span class="name">Patent Drafting</span>
+            </div>
+            <div class="mini-event">
+              <span class="date">Mar 25</span>
+              <span class="name">IP Strategy Session</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-category-card animate-on-scroll delay-500" data-category="awareness">
+          <div class="category-icon awareness"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3>Entrepreneurship Camps</h3>
+          <p>Awareness camps and startup orientation programs</p>
+          <div class="category-stats">
+            <span><i class="fa-solid fa-calendar"></i> 4 Events/Year</span>
+            <span><i class="fa-solid fa-graduation-cap"></i> 1000+ Students</span>
+          </div>
+          <div class="category-events">
+            <div class="mini-event">
+              <span class="date">Jan 20-22</span>
+              <span class="name">Startup Orientation</span>
+            </div>
+            <div class="mini-event">
+              <span class="date">Jul 15-17</span>
+              <span class="name">E-Week 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED EVENTS -->
+  <section class="py-20 bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>Featured Upcoming Events</h2>
+        <p>Don't miss these exciting opportunities</p>
+      </div>
+
+      <div class="featured-events-grid">
+        <div class="featured-event-card animate-on-scroll">
+          <div class="event-date-large">
+            <span class="day">15</span>
+            <span class="month">FEB</span>
+          </div>
+          <div class="event-details">
+            <span class="event-type hackathon">Hackathon</span>
+            <h3>Smart India Hackathon - Internal Round</h3>
+            <p>48-hour coding marathon to solve government problem statements</p>
+            <div class="event-meta">
+              <span><i class="fa-solid fa-clock"></i> Feb 15-16, 2026</span>
+              <span><i class="fa-solid fa-location-dot"></i> Main Campus</span>
+            </div>
+            <div class="event-actions">
+              <a href="#" class="event-btn primary">Register Now</a>
+              <a href="#" class="event-btn secondary">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-event-card animate-on-scroll delay-100">
+          <div class="event-date-large">
+            <span class="day">20</span>
+            <span class="month">FEB</span>
+          </div>
+          <div class="event-details">
+            <span class="event-type workshop">Workshop</span>
+            <h3>AI/ML Hands-on Workshop</h3>
+            <p>Learn machine learning with real-world projects</p>
+            <div class="event-meta">
+              <span><i class="fa-solid fa-clock"></i> Feb 20-22, 2026</span>
+              <span><i class="fa-solid fa-location-dot"></i> AI Lab</span>
+            </div>
+            <div class="event-actions">
+              <a href="#" class="event-btn primary">Register Now</a>
+              <a href="#" class="event-btn secondary">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-event-card animate-on-scroll delay-200">
+          <div class="event-date-large">
+            <span class="day">26</span>
+            <span class="month">APR</span>
+          </div>
+          <div class="event-details">
+            <span class="event-type expo">Expo</span>
+            <h3>Innovation Day 2026</h3>
+            <p>Annual showcase of student and faculty innovations</p>
+            <div class="event-meta">
+              <span><i class="fa-solid fa-clock"></i> April 26, 2026</span>
+              <span><i class="fa-solid fa-location-dot"></i> Convention Center</span>
+            </div>
+            <div class="event-actions">
+              <a href="#" class="event-btn primary">Submit Project</a>
+              <a href="#" class="event-btn secondary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST EVENTS ARCHIVE -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Past Events Archive</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-600 mt-4">Highlights from our previous events</p>
+      </div>
+
+      <div class="past-events-grid">
+        <div class="past-event-card animate-on-scroll">
+          <div class="past-event-image">
+            <div class="image-placeholder">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="past-event-overlay">
+              <a href="#" class="view-gallery"><i class="fa-solid fa-images"></i> View Gallery</a>
+            </div>
+          </div>
+          <div class="past-event-info">
+            <span class="past-event-date">December 2025</span>
+            <h4>Hackathon 2025</h4>
+            <p>300+ participants, 50 teams, 24 hours of innovation</p>
+            <div class="past-event-stats">
+              <span><i class="fa-solid fa-images"></i> 50 Photos</span>
+              <span><i class="fa-solid fa-video"></i> 5 Videos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="past-event-card animate-on-scroll delay-100">
+          <div class="past-event-image">
+            <div class="image-placeholder">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="past-event-overlay">
+              <a href="#" class="view-gallery"><i class="fa-solid fa-images"></i> View Gallery</a>
+            </div>
+          </div>
+          <div class="past-event-info">
+            <span class="past-event-date">October 2025</span>
+            <h4>Innovation Day 2025</h4>
+            <p>100+ projects showcased to industry partners</p>
+            <div class="past-event-stats">
+              <span><i class="fa-solid fa-images"></i> 80 Photos</span>
+              <span><i class="fa-solid fa-video"></i> 10 Videos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="past-event-card animate-on-scroll delay-200">
+          <div class="past-event-image">
+            <div class="image-placeholder">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="past-event-overlay">
+              <a href="#" class="view-gallery"><i class="fa-solid fa-images"></i> View Gallery</a>
+            </div>
+          </div>
+          <div class="past-event-info">
+            <span class="past-event-date">August 2025</span>
+            <h4>Summer Bootcamp</h4>
+            <p>2-week intensive training on emerging technologies</p>
+            <div class="past-event-stats">
+              <span><i class="fa-solid fa-images"></i> 35 Photos</span>
+              <span><i class="fa-solid fa-video"></i> 3 Videos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="past-event-card animate-on-scroll delay-300">
+          <div class="past-event-image">
+            <div class="image-placeholder">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="past-event-overlay">
+              <a href="#" class="view-gallery"><i class="fa-solid fa-images"></i> View Gallery</a>
+            </div>
+          </div>
+          <div class="past-event-info">
+            <span class="past-event-date">April 2025</span>
+            <h4>World IP Day Celebration</h4>
+            <p>Patent awareness drive with expert sessions</p>
+            <div class="past-event-stats">
+              <span><i class="fa-solid fa-images"></i> 25 Photos</span>
+              <span><i class="fa-solid fa-video"></i> 2 Videos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="#" class="btn-primary">View Full Archive <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SCROLL -->
+  <section class="achievements-scroll-section">
+    <div class="achievements-scroll-container">
+      <div class="achievements-scroll-track" id="achievementsTrack">
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Smart India Hackathon Winners 2025</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-medal"></i>
+          <span>Best Innovation Hub Award - AICTE</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-award"></i>
+          <span>₹67 Crore Research Grants</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-certificate"></i>
+          <span>45+ Patents Filed</span>
+        </div>
+        <div class="achievement-scroll-item">
+          <i class="fa-solid fa-rocket"></i>
+          <span>25 Startups Incubated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Vignan_logo_only.png" alt="Vignan Logo" class="h-12" />
+            <div>
+              <h3 class="text-white font-bold text-lg">VIGNAN</h3>
+              <p class="text-sm">Centre for Innovation & Startups</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">Vignan's Institute of Information Technology (Autonomous)</p>
+          <div class="space-y-2 text-sm">
+            <p><i class="fa-solid fa-location-dot mr-2 text-[#60a5fa]"></i>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+            <p><i class="fa-solid fa-envelope mr-2 text-[#60a5fa]"></i>vignaniit@yahoo.com</p>
+            <p><i class="fa-solid fa-phone mr-2 text-[#60a5fa]"></i>+91-08912755222</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="innovation.html" class="hover:text-white transition">Innovation Cell</a></li>
+            <li><a href="edcell.html" class="hover:text-white transition">ED Cell</a></li>
+            <li><a href="ipr.html" class="hover:text-white transition">IPR Cell</a></li>
+            <li><a href="research.html" class="hover:text-white transition">R&D Cell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="idealab.html" class="hover:text-white transition">Idea Lab</a></li>
+            <li><a href="projects.html" class="hover:text-white transition">Projects</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events</a></li>
+            <li><a href="resources.html" class="hover:text-white transition">Resources</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-sm">
+      <p>&copy; 2026 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // Simple calendar
+    const calendarGrid = document.querySelector('.calendar-grid');
+    const events = {
+      15: { type: 'hackathon', name: 'SIH Internal' },
+      16: { type: 'hackathon', name: 'SIH Internal' },
+      20: { type: 'workshop', name: 'AI/ML Workshop' },
+      21: { type: 'workshop', name: 'AI/ML Workshop' },
+      22: { type: 'workshop', name: 'AI/ML Workshop' },
+      25: { type: 'bootcamp', name: 'Patent Clinic' }
+    };
+
+    // Generate calendar days
+    for (let i = 0; i < 6; i++) { // 6 empty cells before Feb 1 (starts on Sunday)
+      const emptyDay = document.createElement('div');
+      emptyDay.className = 'calendar-day empty';
+      calendarGrid.appendChild(emptyDay);
+    }
+
+    for (let day = 1; day <= 28; day++) {
+      const dayEl = document.createElement('div');
+      dayEl.className = 'calendar-day';
+      if (events[day]) {
+        dayEl.classList.add('has-event', events[day].type);
+        dayEl.innerHTML = `<span class="day-number">${day}</span><span class="event-dot"></span>`;
+        dayEl.title = events[day].name;
+      } else {
+        dayEl.innerHTML = `<span class="day-number">${day}</span>`;
+      }
+      calendarGrid.appendChild(dayEl);
+    }
+
+    // Achievements scroll
+    const track = document.getElementById('achievementsTrack');
+    if (track) {
+      const clone = track.innerHTML;
+      track.innerHTML += clone;
+    }
+
+    // Confetti animation
+    function createConfetti() {
+      const container = document.getElementById('confettiContainer');
+      if (!container) return;
+      const colors = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
+      for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.animationDelay = Math.random() * 5 + 's';
+        confetti.style.animationDuration = (5 + Math.random() * 5) + 's';
+        container.appendChild(confetti);
+      }
+    }
+    createConfetti();
+  </script>
+</body>
+</html>

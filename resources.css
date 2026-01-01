@@ -1,0 +1,397 @@
+/* =========================
+   RESOURCES HERO
+========================= */
+.resources-hero {
+  background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 50%, #06b6d4 100%);
+}
+
+.floating-docs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-doc {
+  position: absolute;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.05);
+  animation: floatDoc 15s infinite ease-in-out;
+}
+
+.floating-doc:nth-child(1) { top: 15%; left: 10%; animation-delay: 0s; }
+.floating-doc:nth-child(2) { top: 60%; right: 15%; animation-delay: -4s; }
+.floating-doc:nth-child(3) { bottom: 20%; left: 25%; animation-delay: -8s; }
+.floating-doc:nth-child(4) { top: 30%; right: 30%; animation-delay: -12s; }
+
+@keyframes floatDoc {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+/* =========================
+   SEARCH SECTION
+========================= */
+.resource-search-section {
+  background: white;
+  padding: 2rem 0;
+  margin-top: -2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.resource-search {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.resource-search i {
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 1.1rem;
+}
+
+.resource-search input {
+  width: 100%;
+  padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 3rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.resource-search input:focus {
+  outline: none;
+  border-color: #06b6d4;
+  box-shadow: 0 4px 30px rgba(6, 182, 212, 0.15);
+}
+
+/* =========================
+   RESOURCE CATEGORIES
+========================= */
+.resource-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.resource-category {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.resource-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.category-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.category-icon.templates { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.category-icon.funding { background: linear-gradient(135deg, #10b981, #059669); }
+.category-icon.ipr { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+.category-icon.startup { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.category-icon.design { background: linear-gradient(135deg, #ec4899, #db2777); }
+.category-icon.policy { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+
+.category-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.25rem;
+}
+
+.file-count {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #f9fafb;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.resource-item:hover {
+  background: #e0f2fe;
+}
+
+.resource-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.resource-info i {
+  font-size: 1.25rem;
+  color: #ef4444;
+}
+
+.resource-info i.fa-file-word { color: #2563eb; }
+.resource-info i.fa-file-excel { color: #16a34a; }
+.resource-info i.fa-file-powerpoint { color: #ea580c; }
+
+.resource-info span {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.download-btn {
+  width: 35px;
+  height: 35px;
+  background: #1e40af;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #3b82f6;
+  transform: scale(1.1);
+}
+
+/* =========================
+   PROTOTYPE RESOURCES
+========================= */
+.prototype-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.prototype-resource-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.prototype-resource-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.prototype-resource-card .resource-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prototype-resource-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.prototype-resource-card > p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.resource-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.resource-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.resource-checklist li i {
+  color: #10b981;
+}
+
+.resource-download-btn {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.resource-download-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   WORKSHOP MATERIALS
+========================= */
+.workshop-materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.workshop-material-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.workshop-material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.material-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #e0f2fe, #c7d2fe);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: #1e40af;
+}
+
+.workshop-material-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.material-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.material-files {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.material-files a {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: #1e40af;
+  padding: 0.5rem 0.75rem;
+  background: #e0f2fe;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.material-files a:hover {
+  background: #1e40af;
+  color: white;
+}
+
+/* =========================
+   ACHIEVEMENTS SCROLL
+========================= */
+.achievements-scroll-section {
+  background: linear-gradient(135deg, #0a1628, #1e3a5f);
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+
+.achievements-scroll-container {
+  overflow: hidden;
+}
+
+.achievements-scroll-track {
+  display: flex;
+  gap: 3rem;
+  animation: scrollAchievements 30s linear infinite;
+}
+
+@keyframes scrollAchievements {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.achievement-scroll-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+  color: white;
+  font-weight: 500;
+}
+
+.achievement-scroll-item i {
+  color: #f59e0b;
+  font-size: 1.25rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .resource-categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .material-files {
+    flex-wrap: wrap;
+  }
+}

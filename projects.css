@@ -1,0 +1,438 @@
+/* =========================
+   PROJECTS HERO
+========================= */
+.projects-hero {
+  background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 50%, #3b82f6 100%);
+}
+
+.floating-shapes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  animation: floatShape 20s infinite ease-in-out;
+}
+
+.shape-1 { width: 300px; height: 300px; top: -100px; right: -100px; }
+.shape-2 { width: 200px; height: 200px; bottom: 10%; left: 5%; animation-delay: -5s; }
+.shape-3 { width: 150px; height: 150px; top: 30%; right: 20%; animation-delay: -10s; }
+
+@keyframes floatShape {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -30px) scale(1.1); }
+}
+
+/* =========================
+   STATS BAR
+========================= */
+.stats-bar {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  padding: 2rem 0;
+  margin-top: -2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.stats-bar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-bar-item {
+  color: white;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.stat-text {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* =========================
+   PROJECT FILTERS
+========================= */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 2rem;
+  background: white;
+  color: #6b7280;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: #1e40af;
+  color: #1e40af;
+}
+
+.filter-btn.active {
+  background: #1e40af;
+  border-color: #1e40af;
+  color: white;
+}
+
+.project-search {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.project-search i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.project-search input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.project-search input:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.1);
+}
+
+/* =========================
+   PROJECTS GRID
+========================= */
+.projects-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-showcase-card {
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.project-showcase-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+}
+
+.project-placeholder.aiml { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+.project-placeholder.iot { background: linear-gradient(135deg, #10b981, #059669); }
+.project-placeholder.energy { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.project-placeholder.software { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.project-placeholder.healthcare { background: linear-gradient(135deg, #ef4444, #dc2626); }
+.project-placeholder.hardware { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+.project-placeholder.industry { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-showcase-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-link {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e40af;
+  font-size: 1.25rem;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.project-showcase-card:hover .project-link {
+  transform: scale(1);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tag.aiml { background: #ede9fe; color: #7c3aed; }
+.tag.iot { background: #dcfce7; color: #16a34a; }
+.tag.energy { background: #fef3c7; color: #d97706; }
+.tag.software { background: #dbeafe; color: #1d4ed8; }
+.tag.healthcare { background: #fee2e2; color: #dc2626; }
+.tag.hardware { background: #e0e7ff; color: #4f46e5; }
+.tag.industry { background: #cffafe; color: #0891b2; }
+.tag.agritech { background: #d1fae5; color: #059669; }
+
+.project-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.project-team {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.project-team i {
+  color: #1e40af;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status.funded { background: #dcfce7; color: #16a34a; }
+.status.startup { background: #fef3c7; color: #d97706; }
+.status.prototype { background: #dbeafe; color: #1d4ed8; }
+.status.research { background: #ede9fe; color: #7c3aed; }
+
+.patent {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.patent i {
+  color: #f59e0b;
+  margin-right: 0.25rem;
+}
+
+/* =========================
+   STARTUP SPOTLIGHT
+========================= */
+.startups-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.startup-spotlight-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.startup-spotlight-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.startup-logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.startup-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.startup-info > p {
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.startup-metrics {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.startup-metrics .metric {
+  text-align: center;
+}
+
+.startup-metrics .value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #60a5fa;
+  font-family: 'Playfair Display', serif;
+}
+
+.startup-metrics .label {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.startup-founders {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.startup-founders i {
+  margin-right: 0.5rem;
+}
+
+/* =========================
+   ACHIEVEMENTS SCROLL
+========================= */
+.achievements-scroll-section {
+  background: linear-gradient(135deg, #0a1628, #1e3a5f);
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+
+.achievements-scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.achievements-scroll-track {
+  display: flex;
+  gap: 3rem;
+  animation: scrollAchievements 30s linear infinite;
+}
+
+@keyframes scrollAchievements {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.achievement-scroll-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+  color: white;
+  font-weight: 500;
+}
+
+.achievement-scroll-item i {
+  color: #f59e0b;
+  font-size: 1.25rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .stats-bar-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.75rem;
+  }
+  
+  .projects-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+  }
+  
+  .filter-btn {
+    flex-shrink: 0;
+  }
+}
