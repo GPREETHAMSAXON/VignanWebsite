@@ -172,7 +172,7 @@
               <a href="#">Seed Funding Announcements - Q1 2026</a>
             </div>
           </div>
-        </div>
+                  </div>
       </div>
       <div class="text-center mt-8">
         <a href="#" class="text-[#1e40af] font-semibold hover:underline">View All Announcements <i class="fa-solid fa-arrow-right ml-1"></i></a>
@@ -545,5 +545,15 @@
 
     counters.forEach(counter => counterObserver.observe(counter));
   </script>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <button id="lightbox-close" class="lightbox-close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+  </div>
 </body>
 </html>

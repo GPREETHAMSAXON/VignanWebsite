@@ -152,8 +152,13 @@ body {
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  max-height: 400px;
-  overflow-y: auto;
+  max-height: 350px;
+  position: relative;
+}
+
+.announcements-scroll {
+  display: flex;
+  flex-direction: column;
 }
 
 .announcement-item {
@@ -161,11 +166,13 @@ body {
   align-items: center;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid #e5e7eb;
-  transition: background 0.2s ease;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .announcement-item:hover {
   background: #f8fafc;
+  padding-left: 2rem;
 }
 
 .announcement-date {
@@ -213,18 +220,43 @@ body {
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   border: 1px solid #e5e7eb;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
 }
 
 .accreditation-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px) scale(1.08);
+  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.2);
+  border-color: var(--color-primary);
+  z-index: 10;
+}
+
+.accreditation-card img {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.accreditation-card:hover img {
+  transform: scale(1.15);
+}
+
+.accreditation-card:hover i {
+  transform: scale(1.2);
+  color: var(--color-secondary);
+}
+
+.accreditation-card i {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .accreditation-card h4 {
   font-weight: 600;
   color: var(--color-primary-dark);
   font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.accreditation-card:hover h4 {
+  color: var(--color-primary);
 }
 
 /* =========================
@@ -327,8 +359,13 @@ body {
 /* =========================
    ACHIEVEMENT SCROLLER
 ========================= */
+.achievements-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .scroll-track {
-  --scroll-speed: 60s;
+  --scroll-speed: 45s;
   display: flex;
   gap: 2rem;
   width: max-content;
@@ -346,23 +383,118 @@ body {
 }
 
 .achievement-card {
-  min-width: 280px;
-  max-width: 280px;
+  min-width: 300px;
+  max-width: 300px;
   border-radius: 1rem;
   overflow: hidden;
   background: white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  position: relative;
 }
 
-.achievement-card:hover {
-  transform: scale(1.05);
+.achievement-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 64, 175, 0);
+  transition: background 0.3s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-card:hover::after {
+  background: rgba(30, 64, 175, 0.1);
+}
+
+.scroll-track.has-hover .achievement-card {
+  filter: blur(3px) brightness(0.7);
+  transform: scale(0.95);
+}
+
+.scroll-track.has-hover .achievement-card.active-card {
+  filter: none;
+  transform: scale(1.1);
+  z-index: 20;
+  box-shadow: 0 25px 50px rgba(30, 64, 175, 0.3);
 }
 
 .achievement-card img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.4s ease;
+}
+
+.achievement-card:hover img {
+  transform: scale(1.02);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox.active .lightbox-content {
+  transform: scale(1);
+}
+
+.lightbox-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #0a1628;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.lightbox-close:hover {
+  transform: rotate(90deg) scale(1.1);
+  background: #1e40af;
+  color: white;
 }
 
 /* =========================

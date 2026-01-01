@@ -5,6 +5,42 @@ if (typeof feather !== 'undefined') {
   feather.replace();
 }
 
+/* =========================
+   ANNOUNCEMENTS AUTO-SCROLL
+========================= */
+const announcementsContainer = document.querySelector('.announcements-container');
+const announcementsScroll = document.getElementById('announcementsScroll');
+
+if (announcementsContainer && announcementsScroll) {
+  let scrollPos = 0;
+  let isPaused = false;
+  const scrollSpeed = 0.5;
+  
+  const items = announcementsScroll.querySelectorAll('.announcement-item:not(.clone)');
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    clone.classList.add('clone');
+    announcementsScroll.appendChild(clone);
+  });
+  
+  function scrollAnnouncements() {
+    if (!isPaused) {
+      scrollPos += scrollSpeed;
+      const halfHeight = announcementsScroll.scrollHeight / 2;
+      if (scrollPos >= halfHeight) {
+        scrollPos = 0;
+      }
+      announcementsScroll.style.transform = `translateY(-${scrollPos}px)`;
+    }
+    requestAnimationFrame(scrollAnnouncements);
+  }
+  
+  announcementsContainer.addEventListener('mouseenter', () => isPaused = true);
+  announcementsContainer.addEventListener('mouseleave', () => isPaused = false);
+  
+  scrollAnnouncements();
+}
+
 // Scroll track element
 const track = document.getElementById("scroll-track");
 if (track) {
@@ -190,3 +226,65 @@ document.querySelectorAll(".kpi-card").forEach((card) => {
     `;
   });
 });
+
+/* =========================
+   ACHIEVEMENT HOVER BLUR EFFECT
+========================= */
+const scrollTrack = document.getElementById("scroll-track");
+const achievementCards = document.querySelectorAll(".achievement-card");
+
+if (scrollTrack && achievementCards.length > 0) {
+  achievementCards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+      scrollTrack.classList.add("has-hover");
+      card.classList.add("active-card");
+    });
+
+    card.addEventListener("mouseleave", () => {
+      scrollTrack.classList.remove("has-hover");
+      card.classList.remove("active-card");
+    });
+  });
+}
+
+/* =========================
+   LIGHTBOX FUNCTIONALITY
+========================= */
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxClose = document.getElementById("lightbox-close");
+
+if (lightbox && lightboxImg) {
+  achievementCards.forEach(card => {
+    card.addEventListener("click", () => {
+      const img = card.querySelector("img");
+      if (img) {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener("click", closeLightbox);
+  }
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("active")) {
+      closeLightbox();
+    }
+  });
+}
