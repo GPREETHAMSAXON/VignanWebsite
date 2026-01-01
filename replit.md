@@ -137,16 +137,13 @@ A comprehensive static website for Vignan's Institute of Information Technology'
 
 ### Resources & Downloads (resources.html)
 - Searchable resource library
-- **8 download categories** including new "IIC Reports & Documents" and "IP UTSAV 2025 Reports":
-  - IIC Annual Report 2023-24 (real PDF)
-  - MIC Orientation Session Report (real PDF)
-  - IIC Q3 & Q4 Activity Plan 2024-25 (DOCX)
-  - IIC Activities Summary 2024-25 (DOCX)
-  - IIC Advance Level Training Aug 2025 (PDF)
-  - IP UTSAV 2025 Reports (5 session reports - DOCX)
-- Featured categories with pulsing badges ("Updated", "World IP Day")
-- Purple-themed IP UTSAV category styling
-- 50+ downloadable files
+- **9 download categories** including:
+  - **IIC Reports & Documents** (8 files): Annual Report, MIC Orientation, Q3/Q4 Plans, Activities Summary, Advance Level Training
+  - **IP UTSAV 2025 Reports** (5 files): All 5 session reports (April 22-26)
+  - **Academic Resources** (7 files): B.Tech syllabus (CSE, AI-DS, CSE-AI, Data Science, Cyber Security, Civil), MBA VR25 Regulations
+- Featured categories with pulsing badges ("Updated", "World IP Day", "VR23/VR25")
+- Purple-themed IP UTSAV category, Green-themed Academic category
+- 60+ downloadable files
 - Prototype development guidelines
 - Workshop materials archive
 - Floating document animations
