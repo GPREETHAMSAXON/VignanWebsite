@@ -99,7 +99,7 @@
 
 .ring-progress {
   fill: none;
-  stroke: url(#gradient);
+  stroke: #10b981;
   stroke-width: 8;
   stroke-linecap: round;
   stroke-dasharray: 283;
