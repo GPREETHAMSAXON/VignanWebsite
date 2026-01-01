@@ -29,7 +29,10 @@ A comprehensive static website for Vignan's Institute of Information Technology'
 ├── server.py           # Python HTTP server for local development
 ├── assets/
 │   ├── images/         # Logo and general images
-│   └── achievments/    # Achievement photos
+│   ├── achievments/    # Achievement photos
+│   ├── events/         # Workshop and event photos
+│   ├── team/           # IIC committee meeting photos
+│   └── documents/      # Downloadable PDFs (IIC reports, event reports)
 └── .gitignore          # Git ignore file
 ```
 
@@ -93,7 +96,11 @@ A comprehensive static website for Vignan's Institute of Information Technology'
 ### Idea Lab (idealab.html)
 - Innovation funnel visualization (5 stages)
 - 4 Facilities showcase (Rapid Prototyping, AI/IoT, Robotics, MedTech)
-- Gallery carousel with navigation
+- **Real Photo Gallery** carousel with actual event/meeting photos:
+  - IIC Orientation Session photos
+  - Innovation Workshop photos
+  - Student Training Session photos
+  - IIC Committee Meeting photos
 - Workshop & skill sessions calendar
 - Training modules with progress bars
 - Idea submission form portal
@@ -111,13 +118,24 @@ A comprehensive static website for Vignan's Institute of Information Technology'
 - Interactive events calendar with event markers
 - 6 event categories (Hackathons, FDP/Workshops, Bootcamps, Demo Day, Patent Clinics, E-Camps)
 - Featured upcoming events section
-- Past events archive with gallery links
+- **Real Past Events** with actual photos and PDF links:
+  - MIC Orientation Session (Aug 5, 2024) - 110 students, 40 Innovation Ambassadors
+  - IP Awareness Session (April 21, 2025) - 72 participants, WIPO expert session
+  - Innovation & Entrepreneurship Workshop with real photos
+  - IIC Annual Activities 2023-24 - 399 events documented
+- Event cards with image zoom effects and badge overlays ("MIC Driven", "IP UTSAV")
+- YouTube video links and PDF report downloads
+- Speaker info with expert credentials
 - Confetti animation in hero
-- Upcoming event announcement banner
 
 ### Resources & Downloads (resources.html)
 - Searchable resource library
-- 6 download categories (Templates, Funding, IPR, Startup, Design, Policy)
+- **7 download categories** including new "IIC Reports & Documents":
+  - IIC Annual Report 2023-24 (real PDF)
+  - MIC Orientation Session Report (real PDF)
+  - Event Brochure Template
+- Featured category with pulsing "Updated" badge
+- Featured resource items with gradient backgrounds
 - 40+ downloadable files
 - Prototype development guidelines
 - Workshop materials archive
@@ -125,10 +143,17 @@ A comprehensive static website for Vignan's Institute of Information Technology'
 
 ### Contact (contact.html)
 - Contact info cards (location, phone, email, hours)
-- Team directory with 6 members
+- **Real IIC Team Directory** with 6 members from IIC Annual Report:
+  - Dr. V. Madhusudhan Rao (President/Rector) - Fellow of Royal Society
+  - Dr. Sudhakar Jyothula (Convenor/Principal) - Ph.D. JNTUK
+  - Dr. T. Archana Acharya (Innovation Coordinator)
+  - Dr. K. Srinivasa Naik (Startup Coordinator)
+  - Dr. Ch. Bharat Kumar (IPR Coordinator)
+  - Mr. Malleswara Rao V Anupoju (External Expert, STPI)
+- Featured member cards with role-based avatar colors (gold for president, green for convenor)
+- IIC Committee Meeting photo gallery with hover overlays
 - Multi-tab inquiry system (4 forms: Idea, Prototype, Industry, Research)
 - Form validation with loading states
-- Map placeholder with directions link
 
 ## Advanced CSS/JS Features
 - Intersection Observer for scroll animations
@@ -160,11 +185,22 @@ Run locally with: `python server.py`
 This is a static website - deploy the entire directory as static files.
 
 ## Recent Changes (Jan 2026)
-- Created Idea Lab page with facilities, gallery carousel, innovation funnel, workshops calendar, training modules, idea submission portal, and resource repository
-- Created Projects Showcase page with 9 category filters, searchable grid, startup spotlight
-- Created Events & Programs page with calendar, 6 event categories, past events archive
-- Created Resources & Downloads page with 40+ files, prototype guidelines, workshop materials
-- Created Contact page with team directory, multi-tab inquiry forms (4 types)
+- **Integrated Real Content from IIC Annual Report 2023-24**:
+  - Updated Contact page with real IIC team members (Dr. V. Madhusudhan Rao, Dr. Sudhakar Jyothula, etc.)
+  - Added real events: MIC Orientation (Aug 2024), IP Awareness Session (April 2025)
+  - Added downloadable PDF reports: IIC Annual Report, MIC Orientation Report
+  - Updated Idea Lab gallery with real workshop and meeting photos
+- **Enhanced CSS Effects**:
+  - Featured team cards with gradient avatars and role-based color coding
+  - Meeting photo gallery with hover overlays
+  - Event cards with image zoom effects and badge overlays
+  - Featured resource categories with pulsing "Updated" badges
+  - Speaker info sections with expert credentials
+  - Video link styling for YouTube integration
+- **File Organization**:
+  - assets/events/ - Workshop and event photos
+  - assets/team/ - IIC committee meeting photos
+  - assets/documents/ - Downloadable PDF reports
+- Created Idea Lab, Projects, Events, Resources, Contact pages
 - Added auto-scrolling achievements banner to all new pages
 - Updated navigation to 10 pages across entire site
-- Enhanced animations with gears, confetti, floating shapes, floating documents
