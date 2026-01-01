@@ -141,7 +141,7 @@ A comprehensive static website for Vignan's Institute of Information Technology'
   - **IIC Reports & Documents** (8 files): Annual Report, MIC Orientation, Q3/Q4 Plans, Activities Summary, Advance Level Training
   - **IP UTSAV 2025 Reports** (5 files): All 5 session reports (April 22-26)
   - **IIC Celebration Activities** (7 files): Innovation Day, National Education Day, Pollution Control Day, Energy Conservation Day, Youth Day, Startup Day, Science Day
-  - **Academic Resources** (7 files): B.Tech syllabus (CSE, AI-DS, CSE-AI, Data Science, Cyber Security, Civil), MBA VR25 Regulations
+  - **Academic Resources** (10 files): B.Tech syllabus (CSE, AI-DS, CSE-AI, Data Science, Cyber Security, ECE, ECM, EEE, Civil), MBA VR25 Regulations
 - Featured categories with pulsing badges ("Updated", "World IP Day", "2024-25", "VR23/VR25")
 - Color-themed categories: Purple (IP UTSAV), Orange (Celebrations), Green (Academic)
 - 70+ downloadable files
