@@ -206,6 +206,24 @@
   background: linear-gradient(135deg, #059669, #10b981);
 }
 
+.category-icon.celebration {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.resource-category.celebration-category {
+  border: 2px solid #f59e0b;
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.1);
+}
+
+.resource-category.celebration-category:hover {
+  box-shadow: 0 20px 50px rgba(245, 158, 11, 0.15);
+}
+
+.celebration-category .new-badge {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
 .category-header h3 {
   font-size: 1.1rem;
   font-weight: 600;
