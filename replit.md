@@ -123,20 +123,30 @@ A comprehensive static website for Vignan's Institute of Information Technology'
   - IP Awareness Session (April 21, 2025) - 72 participants, WIPO expert session
   - Innovation & Entrepreneurship Workshop with real photos
   - IIC Annual Activities 2023-24 - 399 events documented
-- Event cards with image zoom effects and badge overlays ("MIC Driven", "IP UTSAV")
-- YouTube video links and PDF report downloads
+- **IP UTSAV Week 2025** (April 22-26) - World IP Day Celebrations:
+  - Design Registrations (Prof. Gargate, Prof. B.K. Chakravarthy - IIT Bombay)
+  - Copyrights Uncovered (Anooja, Dr. Hemant Khosla - Deputy Registrar)
+  - Trademarks Talk (Dr. Rahul Taneja - Govt. of Haryana)
+  - IP Protection & Commercialization (Dr. Kulkarni - CSIR, Top 100 IP Leaders)
+  - Patent to Product (Mr. Jai Veer - Asst. Controller, IP Office)
+- IP UTSAV summary stats (5 sessions, 360+ participants, 72 ambassadors, 7 speakers)
+- Event cards with image zoom effects and badge overlays
+- YouTube video links and PDF/DOCX report downloads
 - Speaker info with expert credentials
 - Confetti animation in hero
 
 ### Resources & Downloads (resources.html)
 - Searchable resource library
-- **7 download categories** including new "IIC Reports & Documents":
+- **8 download categories** including new "IIC Reports & Documents" and "IP UTSAV 2025 Reports":
   - IIC Annual Report 2023-24 (real PDF)
   - MIC Orientation Session Report (real PDF)
-  - Event Brochure Template
-- Featured category with pulsing "Updated" badge
-- Featured resource items with gradient backgrounds
-- 40+ downloadable files
+  - IIC Q3 & Q4 Activity Plan 2024-25 (DOCX)
+  - IIC Activities Summary 2024-25 (DOCX)
+  - IIC Advance Level Training Aug 2025 (PDF)
+  - IP UTSAV 2025 Reports (5 session reports - DOCX)
+- Featured categories with pulsing badges ("Updated", "World IP Day")
+- Purple-themed IP UTSAV category styling
+- 50+ downloadable files
 - Prototype development guidelines
 - Workshop materials archive
 - Floating document animations
