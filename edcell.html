@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ED Cell / Startups | Centre for Innovation & Startups - VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="innovation.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
+        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
+        </a>
+        <div>
+          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="innovation.html" class="nav-item">Innovation Cell</a>
+        <a href="edcell.html" class="nav-item active">ED Cell</a>
+        <a href="#" class="nav-item">IPR</a>
+        <a href="#" class="nav-item">Idea Lab</a>
+        <a href="#" class="nav-item">Events</a>
+        <a href="#" class="nav-item">Contact</a>
+      </nav>
+
+      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50">Home</a>
+      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
+      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50 bg-blue-50 text-[#1e40af]">ED Cell</a>
+      <a href="#" class="block px-4 py-3 border-b hover:bg-gray-50">IPR</a>
+      <a href="#" class="block px-4 py-3 border-b hover:bg-gray-50">Idea Lab</a>
+      <a href="#" class="block px-4 py-3 border-b hover:bg-gray-50">Events</a>
+      <a href="#" class="block px-4 py-3 hover:bg-gray-50">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero ed-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1 class="animate-fade-in">ED Cell / Startup Hub</h1>
+      <p class="animate-fade-in-delay">Cultivating Entrepreneurial Spirit & Building Ventures</p>
+      <div class="breadcrumb animate-fade-in-delay-2">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>ED Cell</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PURPOSE SECTION -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll">
+          <div class="section-title text-left">
+            <h2>Our Purpose</h2>
+            <div class="title-underline ml-0"></div>
+          </div>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            The Entrepreneurship Development (ED) Cell at VIIT is dedicated to cultivating entrepreneurial spirit and converting campus innovations into revenue-generating startups.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            We provide comprehensive support including mentorship, business model development, investor connections, and access to government schemes like MSME, Startup India, and AICTE initiatives.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#register" class="btn-primary pulse-btn">
+              <i class="fa-solid fa-rocket mr-2"></i>Launch Your Startup
+            </a>
+            <a href="#programs" class="btn-secondary">View Programs</a>
+          </div>
+        </div>
+        <div class="animate-on-scroll delay-200">
+          <div class="stats-showcase">
+            <div class="showcase-stat">
+              <span class="stat-value" data-target="25">0</span>
+              <span class="stat-label">Startups Incubated</span>
+            </div>
+            <div class="showcase-stat">
+              <span class="stat-value" data-target="67">0</span>
+              <span class="stat-label">Crores Funding</span>
+            </div>
+            <div class="showcase-stat">
+              <span class="stat-value" data-target="150">0</span>
+              <span class="stat-label">Industry Partners</span>
+            </div>
+            <div class="showcase-stat">
+              <span class="stat-value" data-target="500">0</span>
+              <span class="stat-label">Students Mentored</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="programs" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon bg-gradient-to-br from-purple-500 to-indigo-600">
+            <i class="fa-solid fa-users-gear"></i>
+          </div>
+          <h3>Startup Mentoring</h3>
+          <p>One-on-one guidance from industry experts and successful entrepreneurs to refine your business strategy.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Weekly mentorship sessions</li>
+            <li><i class="fa-solid fa-check"></i> Industry expert network</li>
+            <li><i class="fa-solid fa-check"></i> Strategic guidance</li>
+          </ul>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-100">
+          <div class="service-icon bg-gradient-to-br from-orange-500 to-red-500">
+            <i class="fa-solid fa-table-cells-large"></i>
+          </div>
+          <h3>Business Model Canvas</h3>
+          <p>Structured framework to develop and validate your business model systematically.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Lean Canvas workshops</li>
+            <li><i class="fa-solid fa-check"></i> Value Proposition design</li>
+            <li><i class="fa-solid fa-check"></i> Business plan review</li>
+          </ul>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-200">
+          <div class="service-icon bg-gradient-to-br from-green-500 to-emerald-600">
+            <i class="fa-solid fa-presentation-screen"></i>
+          </div>
+          <h3>Investor Pitch Training</h3>
+          <p>Learn to craft compelling pitches and present to investors with confidence.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Pitch deck creation</li>
+            <li><i class="fa-solid fa-check"></i> Mock investor sessions</li>
+            <li><i class="fa-solid fa-check"></i> Demo Day preparation</li>
+          </ul>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-300">
+          <div class="service-icon bg-gradient-to-br from-blue-500 to-cyan-500">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3>Market Connect</h3>
+          <p>Access to industry networks, potential customers, and partnership opportunities.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Industry networking</li>
+            <li><i class="fa-solid fa-check"></i> Customer discovery</li>
+            <li><i class="fa-solid fa-check"></i> Partnership facilitation</li>
+          </ul>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-400">
+          <div class="service-icon bg-gradient-to-br from-yellow-500 to-amber-600">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3>Government Schemes</h3>
+          <p>Guidance on MSME, Startup India, AICTE, and other government funding programs.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> MSME registration</li>
+            <li><i class="fa-solid fa-check"></i> Startup India benefits</li>
+            <li><i class="fa-solid fa-check"></i> AICTE scheme support</li>
+          </ul>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-500">
+          <div class="service-icon bg-gradient-to-br from-pink-500 to-rose-600">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <h3>Funding Support</h3>
+          <p>Seed funding, grants, and investor connections to fuel your startup growth.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Seed funding access</li>
+            <li><i class="fa-solid fa-check"></i> Grant applications</li>
+            <li><i class="fa-solid fa-check"></i> VC introductions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STARTUPS INCUBATED -->
+  <section class="py-16 bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>Startups Incubated</h2>
+        <p>Success stories from our incubation program</p>
+      </div>
+
+      <div class="startups-carousel">
+        <div class="startup-card animate-on-scroll">
+          <div class="startup-logo">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <h3>EcoTech Solutions</h3>
+          <p class="startup-domain">Sustainability</p>
+          <p class="startup-desc">Sustainable waste management solutions using IoT and AI</p>
+          <div class="startup-funding">
+            <span class="funding-amount">₹5 Cr</span>
+            <span class="funding-label">Seed Funding</span>
+          </div>
+        </div>
+
+        <div class="startup-card animate-on-scroll delay-100">
+          <div class="startup-logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3>HealthFirst AI</h3>
+          <p class="startup-domain">Healthcare</p>
+          <p class="startup-desc">AI-powered diagnostics for rural healthcare</p>
+          <div class="startup-funding">
+            <span class="funding-amount">₹3 Cr</span>
+            <span class="funding-label">Series A</span>
+          </div>
+        </div>
+
+        <div class="startup-card animate-on-scroll delay-200">
+          <div class="startup-logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3>EduLearn Pro</h3>
+          <p class="startup-domain">EdTech</p>
+          <p class="startup-desc">Personalized learning platform for engineering students</p>
+          <div class="startup-funding">
+            <span class="funding-amount">₹2 Cr</span>
+            <span class="funding-label">Angel Funding</span>
+          </div>
+        </div>
+
+        <div class="startup-card animate-on-scroll delay-300">
+          <div class="startup-logo">
+            <i class="fa-solid fa-tractor"></i>
+          </div>
+          <h3>AgriSmart</h3>
+          <p class="startup-domain">AgriTech</p>
+          <p class="startup-desc">Smart farming solutions for small-scale farmers</p>
+          <div class="startup-funding">
+            <span class="funding-amount">₹1.5 Cr</span>
+            <span class="funding-label">Grant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS STORIES -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Founder Success Stories</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="stories-grid">
+        <div class="story-card animate-on-scroll">
+          <div class="story-image">
+            <div class="story-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="story-content">
+            <h3>Rahul Sharma</h3>
+            <p class="story-role">Founder, EcoTech Solutions</p>
+            <p class="story-quote">"The ED Cell at VIIT provided me with the mentorship and resources I needed to transform my idea into a successful startup. The investor connections were invaluable."</p>
+            <div class="story-achievement">
+              <i class="fa-solid fa-trophy"></i> Best Startup Award 2024
+            </div>
+          </div>
+        </div>
+
+        <div class="story-card animate-on-scroll delay-100">
+          <div class="story-image">
+            <div class="story-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="story-content">
+            <h3>Priya Reddy</h3>
+            <p class="story-role">Co-founder, HealthFirst AI</p>
+            <p class="story-quote">"From business model canvas workshops to pitch training, the ED Cell covered everything we needed to raise our first round of funding."</p>
+            <div class="story-achievement">
+              <i class="fa-solid fa-medal"></i> SIH 2023 Winner
+            </div>
+          </div>
+        </div>
+
+        <div class="story-card animate-on-scroll delay-200">
+          <div class="story-image">
+            <div class="story-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="story-content">
+            <h3>Karthik Naidu</h3>
+            <p class="story-role">Founder, EduLearn Pro</p>
+            <p class="story-quote">"The support from VIIT's incubation program helped us validate our market and build a sustainable business model from day one."</p>
+            <div class="story-achievement">
+              <i class="fa-solid fa-star"></i> MSME Recognition 2024
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNDING & GRANTS -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Funding & Grants Secured</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="funding-stats">
+        <div class="funding-item animate-on-scroll">
+          <div class="funding-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="funding-value">₹25 Cr</div>
+          <div class="funding-source">Government Grants</div>
+        </div>
+        <div class="funding-item animate-on-scroll delay-100">
+          <div class="funding-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="funding-value">₹30 Cr</div>
+          <div class="funding-source">VC Investments</div>
+        </div>
+        <div class="funding-item animate-on-scroll delay-200">
+          <div class="funding-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <div class="funding-value">₹12 Cr</div>
+          <div class="funding-source">Angel Funding</div>
+        </div>
+      </div>
+
+      <div class="grants-logos mt-12">
+        <p class="text-center text-gray-600 mb-6">Supported by</p>
+        <div class="flex flex-wrap justify-center items-center gap-8">
+          <div class="grant-badge">AICTE</div>
+          <div class="grant-badge">DST</div>
+          <div class="grant-badge">MSME</div>
+          <div class="grant-badge">Startup India</div>
+          <div class="grant-badge">BIRAC</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOTCAMPS & EVENTS -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Bootcamps & Events</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="events-timeline">
+        <div class="event-item animate-on-scroll">
+          <div class="event-date">
+            <span class="month">Jan</span>
+            <span class="day">15</span>
+          </div>
+          <div class="event-content">
+            <h3>Startup Bootcamp 2026</h3>
+            <p>5-day intensive program on building and scaling startups</p>
+            <span class="event-tag">Upcoming</span>
+          </div>
+        </div>
+
+        <div class="event-item animate-on-scroll delay-100">
+          <div class="event-date">
+            <span class="month">Feb</span>
+            <span class="day">20</span>
+          </div>
+          <div class="event-content">
+            <h3>Investor Connect 2026</h3>
+            <p>Demo day with 50+ investors and VCs</p>
+            <span class="event-tag">Registration Open</span>
+          </div>
+        </div>
+
+        <div class="event-item animate-on-scroll delay-200">
+          <div class="event-date">
+            <span class="month">Mar</span>
+            <span class="day">10</span>
+          </div>
+          <div class="event-content">
+            <h3>Smart India Hackathon 2026</h3>
+            <p>National level hackathon for innovative solutions</p>
+            <span class="event-tag">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTRATION FORM -->
+  <section id="register" class="py-20 bg-gradient-to-r from-[#1e40af] to-[#3b82f6] text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Launch Your Startup?</h2>
+        <p class="text-lg opacity-90">Apply for our incubation program and get the support you need to succeed.</p>
+      </div>
+
+      <div class="registration-form bg-white rounded-2xl p-8 shadow-2xl">
+        <form class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">Full Name</label>
+              <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition" placeholder="Your name" />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">Email</label>
+              <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition" placeholder="your@email.com" />
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">Phone</label>
+              <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition" placeholder="+91 XXXXX XXXXX" />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">Startup Name</label>
+              <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition" placeholder="Your startup name" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-gray-700 font-medium mb-2">Brief Description</label>
+            <textarea class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition" rows="4" placeholder="Tell us about your startup idea..."></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-[#1e40af] text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-[#1e3a8a] transition transform hover:-translate-y-1 hover:shadow-lg">
+              <i class="fa-solid fa-paper-plane mr-2"></i>Submit Application
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Vignan_logo_only.png" alt="Vignan Logo" class="h-12" />
+            <div>
+              <h3 class="text-white font-bold text-lg">VIGNAN</h3>
+              <p class="text-sm">Centre for Innovation & Startups</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">Vignan's Institute of Information Technology (Autonomous)</p>
+          <div class="space-y-2 text-sm">
+            <p><i class="fa-solid fa-location-dot mr-2 text-[#60a5fa]"></i>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+            <p><i class="fa-solid fa-envelope mr-2 text-[#60a5fa]"></i>vignaniit@yahoo.com</p>
+            <p><i class="fa-solid fa-phone mr-2 text-[#60a5fa]"></i>+91-08912755222</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="innovation.html" class="hover:text-white transition">Innovation Cell</a></li>
+            <li><a href="edcell.html" class="hover:text-white transition">ED Cell</a></li>
+            <li><a href="#" class="hover:text-white transition">IPR & Patents</a></li>
+            <li><a href="#" class="hover:text-white transition">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition">AICTE</a></li>
+            <li><a href="#" class="hover:text-white transition">NAAC</a></li>
+            <li><a href="#" class="hover:text-white transition">NBA</a></li>
+            <li><a href="#" class="hover:text-white transition">NIRF</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-sm">
+      <p>&copy; 2026 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // Animated counters
+    document.querySelectorAll('.stat-value').forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target'));
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          let current = 0;
+          const step = target / 50;
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              counter.textContent = target;
+              clearInterval(timer);
+            } else {
+              counter.textContent = Math.floor(current);
+            }
+          }, 30);
+          observer.disconnect();
+        }
+      }, { threshold: 0.5 });
+      observer.observe(counter);
+    });
+  </script>
+</body>
+</html>

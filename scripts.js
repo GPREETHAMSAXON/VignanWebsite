@@ -1,7 +1,9 @@
 /* =========================
    INIT
 ========================= */
-feather.replace();
+if (typeof feather !== 'undefined') {
+  feather.replace();
+}
 
 // Scroll track element
 const track = document.getElementById("scroll-track");
