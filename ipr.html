@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IPR Cell | Centre for Innovation & Startups - VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="innovation.css" />
+  <link rel="stylesheet" href="ipr.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
+        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
+        </a>
+        <div>
+          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="innovation.html" class="nav-item">Innovation Cell</a>
+        <a href="edcell.html" class="nav-item">ED Cell</a>
+        <a href="ipr.html" class="nav-item active">IPR</a>
+        <a href="research.html" class="nav-item">R&D Cell</a>
+        <a href="#" class="nav-item">Events</a>
+        <a href="#" class="nav-item">Contact</a>
+      </nav>
+
+      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50">Home</a>
+      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
+      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50">ED Cell</a>
+      <a href="ipr.html" class="block px-4 py-3 border-b hover:bg-gray-50 bg-blue-50 text-[#1e40af]">IPR</a>
+      <a href="research.html" class="block px-4 py-3 border-b hover:bg-gray-50">R&D Cell</a>
+      <a href="#" class="block px-4 py-3 border-b hover:bg-gray-50">Events</a>
+      <a href="#" class="block px-4 py-3 hover:bg-gray-50">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero ipr-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="floating-icons">
+      <i class="fa-solid fa-certificate floating-icon"></i>
+      <i class="fa-solid fa-shield-halved floating-icon"></i>
+      <i class="fa-solid fa-file-contract floating-icon"></i>
+      <i class="fa-solid fa-stamp floating-icon"></i>
+    </div>
+    <div class="page-hero-content">
+      <h1 class="animate-fade-in">IPR Cell</h1>
+      <p class="animate-fade-in-delay">Protecting Your Innovations & Intellectual Property</p>
+      <div class="breadcrumb animate-fade-in-delay-2">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>IPR Cell</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS IPR -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll">
+          <div class="section-title text-left">
+            <h2>What is IPR?</h2>
+            <div class="title-underline ml-0"></div>
+          </div>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            Intellectual Property Rights (IPR) are legal rights that protect creations of the mind, including inventions, literary and artistic works, designs, symbols, names, and images used in commerce.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            The IPR Cell at VIIT facilitates patent filing, copyright/trademark registration, and protects institutional innovations. We guide faculty and students through the entire IP protection journey.
+          </p>
+          <div class="ipr-types-grid">
+            <div class="ipr-type-card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Patents</span>
+            </div>
+            <div class="ipr-type-card">
+              <i class="fa-solid fa-copyright"></i>
+              <span>Copyrights</span>
+            </div>
+            <div class="ipr-type-card">
+              <i class="fa-solid fa-registered"></i>
+              <span>Trademarks</span>
+            </div>
+            <div class="ipr-type-card">
+              <i class="fa-solid fa-palette"></i>
+              <span>Designs</span>
+            </div>
+          </div>
+        </div>
+        <div class="animate-on-scroll delay-200">
+          <div class="ipr-stats-showcase">
+            <div class="ipr-stat-card">
+              <div class="ipr-stat-icon"><i class="fa-solid fa-file-signature"></i></div>
+              <div class="ipr-stat-value" data-target="45">0</div>
+              <div class="ipr-stat-label">Patents Filed</div>
+            </div>
+            <div class="ipr-stat-card">
+              <div class="ipr-stat-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="ipr-stat-value" data-target="18">0</div>
+              <div class="ipr-stat-label">Patents Granted</div>
+            </div>
+            <div class="ipr-stat-card">
+              <div class="ipr-stat-icon"><i class="fa-solid fa-copyright"></i></div>
+              <div class="ipr-stat-value" data-target="32">0</div>
+              <div class="ipr-stat-label">Copyrights</div>
+            </div>
+            <div class="ipr-stat-card">
+              <div class="ipr-stat-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="ipr-stat-value" data-target="120">0</div>
+              <div class="ipr-stat-label">Innovators Supported</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATENT FILING WORKFLOW -->
+  <section class="py-20 bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>Patent Filing Workflow</h2>
+        <p>Step-by-step guide to protect your innovation</p>
+      </div>
+
+      <div class="workflow-timeline">
+        <div class="workflow-step animate-on-scroll" data-step="1">
+          <div class="step-connector"></div>
+          <div class="step-node">
+            <div class="step-number">1</div>
+            <div class="step-pulse"></div>
+          </div>
+          <div class="step-card">
+            <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3>Idea Disclosure</h3>
+            <p>Submit your innovation idea with detailed description and novelty aspects</p>
+            <a href="#" class="step-action">Download Form <i class="fa-solid fa-download ml-1"></i></a>
+          </div>
+        </div>
+
+        <div class="workflow-step animate-on-scroll delay-100" data-step="2">
+          <div class="step-connector"></div>
+          <div class="step-node">
+            <div class="step-number">2</div>
+            <div class="step-pulse"></div>
+          </div>
+          <div class="step-card">
+            <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>Prior Art Search</h3>
+            <p>IPR Cell conducts comprehensive search to verify novelty and patentability</p>
+            <span class="step-duration"><i class="fa-solid fa-clock mr-1"></i>7-10 Days</span>
+          </div>
+        </div>
+
+        <div class="workflow-step animate-on-scroll delay-200" data-step="3">
+          <div class="step-connector"></div>
+          <div class="step-node">
+            <div class="step-number">3</div>
+            <div class="step-pulse"></div>
+          </div>
+          <div class="step-card">
+            <div class="step-icon"><i class="fa-solid fa-file-pen"></i></div>
+            <h3>Patent Drafting</h3>
+            <p>Professional drafting of patent specifications with claims and drawings</p>
+            <span class="step-duration"><i class="fa-solid fa-clock mr-1"></i>15-20 Days</span>
+          </div>
+        </div>
+
+        <div class="workflow-step animate-on-scroll delay-300" data-step="4">
+          <div class="step-connector"></div>
+          <div class="step-node">
+            <div class="step-number">4</div>
+            <div class="step-pulse"></div>
+          </div>
+          <div class="step-card">
+            <div class="step-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <h3>Filing Application</h3>
+            <p>Application filed with Indian Patent Office with required documentation</p>
+            <span class="step-duration"><i class="fa-solid fa-clock mr-1"></i>5-7 Days</span>
+          </div>
+        </div>
+
+        <div class="workflow-step animate-on-scroll delay-400" data-step="5">
+          <div class="step-connector"></div>
+          <div class="step-node">
+            <div class="step-number">5</div>
+            <div class="step-pulse"></div>
+          </div>
+          <div class="step-card">
+            <div class="step-icon"><i class="fa-solid fa-gavel"></i></div>
+            <h3>Examination & Response</h3>
+            <p>Respond to patent office queries and examination reports</p>
+            <span class="step-duration"><i class="fa-solid fa-clock mr-1"></i>12-18 Months</span>
+          </div>
+        </div>
+
+        <div class="workflow-step animate-on-scroll delay-500" data-step="6">
+          <div class="step-connector"></div>
+          <div class="step-node">
+            <div class="step-number">6</div>
+            <div class="step-pulse"></div>
+          </div>
+          <div class="step-card granted">
+            <div class="step-icon"><i class="fa-solid fa-trophy"></i></div>
+            <h3>Patent Granted!</h3>
+            <p>Receive your patent certificate and exclusive rights for 20 years</p>
+            <span class="step-badge"><i class="fa-solid fa-check mr-1"></i>Protected</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATENT DATABASE -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Patent Database</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="patent-filters">
+        <button class="patent-filter-btn active" data-filter="all">All Patents</button>
+        <button class="patent-filter-btn" data-filter="granted">Granted</button>
+        <button class="patent-filter-btn" data-filter="filed">Filed</button>
+        <button class="patent-filter-btn" data-filter="published">Published</button>
+      </div>
+
+      <div class="patent-search">
+        <i class="fa-solid fa-search"></i>
+        <input type="text" id="patentSearch" placeholder="Search patents by title, inventor, or domain..." />
+      </div>
+
+      <div class="patents-grid" id="patentsGrid">
+        <div class="patent-card animate-on-scroll" data-status="granted">
+          <div class="patent-status granted">
+            <i class="fa-solid fa-circle-check"></i> Granted
+          </div>
+          <h3>Smart IoT-Based Crop Monitoring System</h3>
+          <div class="patent-meta">
+            <span><i class="fa-solid fa-user"></i> Dr. K. Ramesh, B. Suresh</span>
+            <span><i class="fa-solid fa-calendar"></i> 2024</span>
+          </div>
+          <p>An automated system for real-time monitoring of soil conditions and crop health using IoT sensors.</p>
+          <div class="patent-details">
+            <span class="patent-number">IN202341012345</span>
+            <span class="patent-domain">AgriTech</span>
+          </div>
+        </div>
+
+        <div class="patent-card animate-on-scroll delay-100" data-status="granted">
+          <div class="patent-status granted">
+            <i class="fa-solid fa-circle-check"></i> Granted
+          </div>
+          <h3>AI-Powered Medical Image Analysis</h3>
+          <div class="patent-meta">
+            <span><i class="fa-solid fa-user"></i> Dr. P. Reddy, S. Kumar</span>
+            <span><i class="fa-solid fa-calendar"></i> 2024</span>
+          </div>
+          <p>Deep learning algorithm for early detection of diseases through medical imaging analysis.</p>
+          <div class="patent-details">
+            <span class="patent-number">IN202341023456</span>
+            <span class="patent-domain">Healthcare</span>
+          </div>
+        </div>
+
+        <div class="patent-card animate-on-scroll delay-200" data-status="filed">
+          <div class="patent-status filed">
+            <i class="fa-solid fa-hourglass-half"></i> Filed
+          </div>
+          <h3>Renewable Energy Storage System</h3>
+          <div class="patent-meta">
+            <span><i class="fa-solid fa-user"></i> Prof. M. Rao, A. Sharma</span>
+            <span><i class="fa-solid fa-calendar"></i> 2025</span>
+          </div>
+          <p>Novel battery technology for efficient storage of solar and wind energy.</p>
+          <div class="patent-details">
+            <span class="patent-number">IN202541034567</span>
+            <span class="patent-domain">Energy</span>
+          </div>
+        </div>
+
+        <div class="patent-card animate-on-scroll delay-300" data-status="published">
+          <div class="patent-status published">
+            <i class="fa-solid fa-book-open"></i> Published
+          </div>
+          <h3>Blockchain-Based Supply Chain</h3>
+          <div class="patent-meta">
+            <span><i class="fa-solid fa-user"></i> Dr. V. Naidu, R. Patel</span>
+            <span><i class="fa-solid fa-calendar"></i> 2025</span>
+          </div>
+          <p>Transparent and tamper-proof supply chain management using blockchain technology.</p>
+          <div class="patent-details">
+            <span class="patent-number">IN202541045678</span>
+            <span class="patent-domain">FinTech</span>
+          </div>
+        </div>
+
+        <div class="patent-card animate-on-scroll delay-400" data-status="filed">
+          <div class="patent-status filed">
+            <i class="fa-solid fa-hourglass-half"></i> Filed
+          </div>
+          <h3>Wearable Health Monitoring Device</h3>
+          <div class="patent-meta">
+            <span><i class="fa-solid fa-user"></i> Dr. S. Venkat, Team Gamma</span>
+            <span><i class="fa-solid fa-calendar"></i> 2025</span>
+          </div>
+          <p>Non-invasive wearable device for continuous monitoring of vital health parameters.</p>
+          <div class="patent-details">
+            <span class="patent-number">IN202541056789</span>
+            <span class="patent-domain">Healthcare</span>
+          </div>
+        </div>
+
+        <div class="patent-card animate-on-scroll delay-500" data-status="granted">
+          <div class="patent-status granted">
+            <i class="fa-solid fa-circle-check"></i> Granted
+          </div>
+          <h3>Autonomous Drone Navigation</h3>
+          <div class="patent-meta">
+            <span><i class="fa-solid fa-user"></i> Prof. J. Singh, D. Murthy</span>
+            <span><i class="fa-solid fa-calendar"></i> 2023</span>
+          </div>
+          <p>AI-based obstacle detection and path planning for autonomous drones.</p>
+          <div class="patent-details">
+            <span class="patent-number">IN202341067890</span>
+            <span class="patent-domain">Robotics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="#" class="btn-primary">View Complete Database <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- IPR AWARENESS PROGRAMS -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>IPR Awareness Programs</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-600 mt-4">Empowering innovators with IP knowledge</p>
+      </div>
+
+      <div class="programs-showcase">
+        <div class="program-showcase-card animate-on-scroll">
+          <div class="program-icon-large"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <h3>Workshops & Seminars</h3>
+          <p>Regular sessions on patent filing, copyright protection, and trademark registration</p>
+          <div class="program-stats">
+            <div class="program-stat">
+              <span class="value">24</span>
+              <span class="label">Workshops/Year</span>
+            </div>
+            <div class="program-stat">
+              <span class="value">500+</span>
+              <span class="label">Participants</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-showcase-card animate-on-scroll delay-100">
+          <div class="program-icon-large"><i class="fa-solid fa-video"></i></div>
+          <h3>IP Webinars</h3>
+          <p>Online sessions with industry experts and patent attorneys</p>
+          <div class="program-stats">
+            <div class="program-stat">
+              <span class="value">12</span>
+              <span class="label">Webinars/Year</span>
+            </div>
+            <div class="program-stat">
+              <span class="value">1000+</span>
+              <span class="label">Views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-showcase-card animate-on-scroll delay-200">
+          <div class="program-icon-large"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>IPR Certification</h3>
+          <p>Certificate courses on intellectual property management</p>
+          <div class="program-stats">
+            <div class="program-stat">
+              <span class="value">150+</span>
+              <span class="label">Certified</span>
+            </div>
+            <div class="program-stat">
+              <span class="value">40hrs</span>
+              <span class="label">Course Duration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-showcase-card animate-on-scroll delay-300">
+          <div class="program-icon-large"><i class="fa-solid fa-calendar-check"></i></div>
+          <h3>IP Week Celebration</h3>
+          <p>Annual celebration with competitions, exhibitions, and guest lectures</p>
+          <div class="program-stats">
+            <div class="program-stat">
+              <span class="value">7</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="program-stat">
+              <span class="value">15+</span>
+              <span class="label">Events</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="upcoming-events mt-12">
+        <h3 class="text-xl font-bold text-[#0a1628] mb-6 text-center">Upcoming IP Events</h3>
+        <div class="events-scroll">
+          <div class="ip-event-card">
+            <div class="event-date-badge">
+              <span class="month">Feb</span>
+              <span class="day">15</span>
+            </div>
+            <div class="event-info">
+              <h4>Patent Drafting Workshop</h4>
+              <p>Hands-on session on writing effective patent claims</p>
+              <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="ip-event-card">
+            <div class="event-date-badge">
+              <span class="month">Mar</span>
+              <span class="day">05</span>
+            </div>
+            <div class="event-info">
+              <h4>Copyright Basics Webinar</h4>
+              <p>Understanding copyright protection for software and content</p>
+              <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="ip-event-card">
+            <div class="event-date-badge">
+              <span class="month">Apr</span>
+              <span class="day">26</span>
+            </div>
+            <div class="event-info">
+              <h4>World IP Day Celebration</h4>
+              <p>Innovation exhibition and IP awareness drive</p>
+              <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULTATION PORTAL -->
+  <section class="py-20 bg-gradient-to-r from-[#7c3aed] to-[#a855f7] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-6">Patent Consultation Portal</h2>
+          <p class="text-lg opacity-90 mb-8">
+            Get expert guidance on protecting your innovation. Our IPR team provides personalized consultation for patent filing, prior art search, and IP strategy.
+          </p>
+          <div class="consultation-features">
+            <div class="feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Free initial consultation for VIIT community</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Expert patent attorneys on panel</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>End-to-end support for patent filing</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>IP strategy for startups and research projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="animate-on-scroll delay-200">
+          <div class="consultation-form-container">
+            <h3>Submit Innovation for Evaluation</h3>
+            <form class="consultation-form" id="consultationForm">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required />
+              </div>
+              <div class="form-group">
+                <label>Department</label>
+                <select required>
+                  <option value="">Select Department</option>
+                  <option value="cse">Computer Science</option>
+                  <option value="ece">Electronics & Communication</option>
+                  <option value="eee">Electrical Engineering</option>
+                  <option value="mech">Mechanical Engineering</option>
+                  <option value="civil">Civil Engineering</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Innovation Title</label>
+                <input type="text" placeholder="Brief title of your innovation" required />
+              </div>
+              <div class="form-group">
+                <label>Brief Description</label>
+                <textarea rows="4" placeholder="Describe your innovation and its novelty..." required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <i class="fa-solid fa-paper-plane mr-2"></i>Submit for Evaluation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLICIES & RESOURCES -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Policies & Resources</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="policy-card animate-on-scroll">
+          <div class="policy-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <h3>National IP Policy</h3>
+          <p>Guidelines and framework for intellectual property protection in India</p>
+          <a href="#" class="download-btn"><i class="fa-solid fa-download mr-2"></i>Download PDF</a>
+        </div>
+
+        <div class="policy-card animate-on-scroll delay-100">
+          <div class="policy-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>International Patents</h3>
+          <p>PCT filing process for international patent protection</p>
+          <a href="#" class="download-btn"><i class="fa-solid fa-external-link mr-2"></i>Learn More</a>
+        </div>
+
+        <div class="policy-card animate-on-scroll delay-200">
+          <div class="policy-icon"><i class="fa-solid fa-book"></i></div>
+          <h3>VIIT IP Policy</h3>
+          <p>Institutional policy on ownership, rights, and revenue sharing</p>
+          <a href="#" class="download-btn"><i class="fa-solid fa-download mr-2"></i>Download PDF</a>
+        </div>
+
+        <div class="policy-card animate-on-scroll delay-300">
+          <div class="policy-icon"><i class="fa-solid fa-coins"></i></div>
+          <h3>Fee Structure</h3>
+          <p>Patent filing fees and government support schemes</p>
+          <a href="#" class="download-btn"><i class="fa-solid fa-download mr-2"></i>Download PDF</a>
+        </div>
+
+        <div class="policy-card animate-on-scroll delay-400">
+          <div class="policy-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+          <h3>Filing Checklist</h3>
+          <p>Complete checklist of documents required for patent filing</p>
+          <a href="#" class="download-btn"><i class="fa-solid fa-download mr-2"></i>Download PDF</a>
+        </div>
+
+        <div class="policy-card animate-on-scroll delay-500">
+          <div class="policy-icon"><i class="fa-solid fa-link"></i></div>
+          <h3>Useful Links</h3>
+          <p>Indian Patent Office, WIPO, and other IP resources</p>
+          <a href="#" class="download-btn"><i class="fa-solid fa-external-link mr-2"></i>Visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Vignan_logo_only.png" alt="Vignan Logo" class="h-12" />
+            <div>
+              <h3 class="text-white font-bold text-lg">VIGNAN</h3>
+              <p class="text-sm">Centre for Innovation & Startups</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">Vignan's Institute of Information Technology (Autonomous)</p>
+          <div class="space-y-2 text-sm">
+            <p><i class="fa-solid fa-location-dot mr-2 text-[#60a5fa]"></i>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+            <p><i class="fa-solid fa-envelope mr-2 text-[#60a5fa]"></i>vignaniit@yahoo.com</p>
+            <p><i class="fa-solid fa-phone mr-2 text-[#60a5fa]"></i>+91-08912755222</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="innovation.html" class="hover:text-white transition">Innovation Cell</a></li>
+            <li><a href="edcell.html" class="hover:text-white transition">ED Cell</a></li>
+            <li><a href="ipr.html" class="hover:text-white transition">IPR Cell</a></li>
+            <li><a href="research.html" class="hover:text-white transition">R&D Cell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition">Patent Office</a></li>
+            <li><a href="#" class="hover:text-white transition">WIPO</a></li>
+            <li><a href="#" class="hover:text-white transition">IP India</a></li>
+            <li><a href="#" class="hover:text-white transition">NIRF</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-sm">
+      <p>&copy; 2026 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    const iprCounters = document.querySelectorAll('.ipr-stat-value');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseInt(counter.getAttribute('data-target'));
+          const duration = 2000;
+          const step = target / (duration / 16);
+          let current = 0;
+
+          const updateCounter = () => {
+            current += step;
+            if (current < target) {
+              counter.textContent = Math.floor(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          };
+          updateCounter();
+          counterObserver.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    iprCounters.forEach(counter => counterObserver.observe(counter));
+
+    const patentFilterBtns = document.querySelectorAll('.patent-filter-btn');
+    const patentCards = document.querySelectorAll('.patent-card');
+
+    patentFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        patentFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        
+        patentCards.forEach(card => {
+          if (filter === 'all' || card.dataset.status === filter) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeInUp 0.5s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    const patentSearch = document.getElementById('patentSearch');
+    patentSearch?.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      patentCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+
+    document.getElementById('consultationForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('.submit-btn');
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>Submitting...';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i>Submitted Successfully!';
+        btn.style.background = '#10b981';
+        setTimeout(() => {
+          e.target.reset();
+          btn.innerHTML = '<i class="fa-solid fa-paper-plane mr-2"></i>Submit for Evaluation';
+          btn.style.background = '';
+        }, 2000);
+      }, 1500);
+    });
+
+    document.querySelectorAll('.workflow-step').forEach((step, index) => {
+      step.addEventListener('mouseenter', () => {
+        step.querySelector('.step-pulse')?.classList.add('active');
+      });
+      step.addEventListener('mouseleave', () => {
+        step.querySelector('.step-pulse')?.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

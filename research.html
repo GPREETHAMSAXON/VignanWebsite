@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>R&D Cell | Centre for Innovation & Startups - VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="innovation.css" />
+  <link rel="stylesheet" href="research.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
+        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
+        </a>
+        <div>
+          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="innovation.html" class="nav-item">Innovation Cell</a>
+        <a href="edcell.html" class="nav-item">ED Cell</a>
+        <a href="ipr.html" class="nav-item">IPR</a>
+        <a href="research.html" class="nav-item active">R&D Cell</a>
+        <a href="#" class="nav-item">Events</a>
+        <a href="#" class="nav-item">Contact</a>
+      </nav>
+
+      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50">Home</a>
+      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
+      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50">ED Cell</a>
+      <a href="ipr.html" class="block px-4 py-3 border-b hover:bg-gray-50">IPR</a>
+      <a href="research.html" class="block px-4 py-3 border-b hover:bg-gray-50 bg-blue-50 text-[#1e40af]">R&D Cell</a>
+      <a href="#" class="block px-4 py-3 border-b hover:bg-gray-50">Events</a>
+      <a href="#" class="block px-4 py-3 hover:bg-gray-50">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero research-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="page-hero-content">
+      <h1 class="animate-fade-in">Research & Development Cell</h1>
+      <p class="animate-fade-in-delay">Advancing Knowledge Through Innovation & Discovery</p>
+      <div class="breadcrumb animate-fade-in-delay-2">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>R&D Cell</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll">
+          <div class="section-title text-left">
+            <h2>Our Objective</h2>
+            <div class="title-underline ml-0"></div>
+          </div>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            The R&D Cell strengthens research capacity and encourages faculty & students to solve real-world problems through systematic research methodologies and industry collaboration.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            We provide comprehensive support for research projects, facilitate access to funding, and promote publication in high-impact journals. Our goal is to create an environment that nurtures curiosity and drives innovation.
+          </p>
+          <div class="research-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-microscope"></i>
+              <span>State-of-art Research Labs</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-coins"></i>
+              <span>Funded Research Projects</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-handshake"></i>
+              <span>Industry Collaboration</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-book-open-reader"></i>
+              <span>Publication Support</span>
+            </div>
+          </div>
+        </div>
+        <div class="animate-on-scroll delay-200">
+          <div class="research-metrics-container">
+            <div class="metrics-grid">
+              <div class="metric-card" data-value="156">
+                <div class="metric-ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="ring-bg" />
+                    <circle cx="50" cy="50" r="45" class="ring-progress" style="--progress: 85" />
+                  </svg>
+                  <div class="metric-value">156</div>
+                </div>
+                <span class="metric-label">Publications</span>
+              </div>
+              <div class="metric-card" data-value="42">
+                <div class="metric-ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="ring-bg" />
+                    <circle cx="50" cy="50" r="45" class="ring-progress" style="--progress: 70" />
+                  </svg>
+                  <div class="metric-value">42</div>
+                </div>
+                <span class="metric-label">Funded Projects</span>
+              </div>
+              <div class="metric-card" data-value="67">
+                <div class="metric-ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="ring-bg" />
+                    <circle cx="50" cy="50" r="45" class="ring-progress" style="--progress: 60" />
+                  </svg>
+                  <div class="metric-value">67</div>
+                </div>
+                <span class="metric-label">Cr Grants</span>
+              </div>
+              <div class="metric-card" data-value="28">
+                <div class="metric-ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="ring-bg" />
+                    <circle cx="50" cy="50" r="45" class="ring-progress" style="--progress: 55" />
+                  </svg>
+                  <div class="metric-value">28</div>
+                </div>
+                <span class="metric-label">Industry Partners</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL FOR PROPOSALS -->
+  <section class="py-16 bg-gradient-to-r from-[#10b981] to-[#059669] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="cta-banner">
+        <div class="cta-content">
+          <div class="cta-badge">
+            <i class="fa-solid fa-bell"></i>
+            <span>Call for Proposals - Open Now</span>
+          </div>
+          <h2>Research Proposal Submission 2026</h2>
+          <p>Submit your innovative research proposals for funding consideration. Deadline: March 31, 2026</p>
+          <div class="cta-buttons">
+            <a href="#" class="cta-primary-btn">Apply Now <i class="fa-solid fa-arrow-right ml-2"></i></a>
+            <a href="#" class="cta-secondary-btn">View Guidelines</a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="animated-icon">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENT-WISE PROJECTS -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Research Projects by Department</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="department-tabs">
+        <button class="dept-tab active" data-dept="all">All Departments</button>
+        <button class="dept-tab" data-dept="cse">CSE</button>
+        <button class="dept-tab" data-dept="ece">ECE</button>
+        <button class="dept-tab" data-dept="eee">EEE</button>
+        <button class="dept-tab" data-dept="mech">Mechanical</button>
+        <button class="dept-tab" data-dept="civil">Civil</button>
+      </div>
+
+      <div class="projects-container" id="projectsContainer">
+        <div class="research-project-card animate-on-scroll" data-dept="cse">
+          <div class="project-header">
+            <span class="dept-badge cse">CSE</span>
+            <span class="project-status ongoing">Ongoing</span>
+          </div>
+          <h3>AI-Powered Disease Prediction System</h3>
+          <p>Machine learning models for early detection of chronic diseases using patient data analysis.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Dr. K. Ramesh</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <span>25 Lakhs</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-building"></i>
+              <span>DST</span>
+            </div>
+          </div>
+          <div class="project-progress">
+            <div class="progress-bar" style="--progress: 65%"></div>
+            <span>65% Complete</span>
+          </div>
+        </div>
+
+        <div class="research-project-card animate-on-scroll delay-100" data-dept="ece">
+          <div class="project-header">
+            <span class="dept-badge ece">ECE</span>
+            <span class="project-status ongoing">Ongoing</span>
+          </div>
+          <h3>5G-Enabled IoT for Smart Agriculture</h3>
+          <p>Development of low-power sensors and communication protocols for precision farming.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Dr. P. Reddy</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <span>35 Lakhs</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-building"></i>
+              <span>AICTE</span>
+            </div>
+          </div>
+          <div class="project-progress">
+            <div class="progress-bar" style="--progress: 40%"></div>
+            <span>40% Complete</span>
+          </div>
+        </div>
+
+        <div class="research-project-card animate-on-scroll delay-200" data-dept="eee">
+          <div class="project-header">
+            <span class="dept-badge eee">EEE</span>
+            <span class="project-status completed">Completed</span>
+          </div>
+          <h3>Hybrid Renewable Energy Grid</h3>
+          <p>Optimal integration of solar, wind, and battery storage for sustainable power generation.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Prof. M. Rao</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <span>45 Lakhs</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-building"></i>
+              <span>MNRE</span>
+            </div>
+          </div>
+          <div class="project-progress">
+            <div class="progress-bar" style="--progress: 100%"></div>
+            <span>100% Complete</span>
+          </div>
+        </div>
+
+        <div class="research-project-card animate-on-scroll delay-300" data-dept="mech">
+          <div class="project-header">
+            <span class="dept-badge mech">MECH</span>
+            <span class="project-status ongoing">Ongoing</span>
+          </div>
+          <h3>Biodegradable Composite Materials</h3>
+          <p>Development of eco-friendly composites from agricultural waste for industrial applications.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Dr. S. Kumar</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <span>18 Lakhs</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-building"></i>
+              <span>MSME</span>
+            </div>
+          </div>
+          <div class="project-progress">
+            <div class="progress-bar" style="--progress: 55%"></div>
+            <span>55% Complete</span>
+          </div>
+        </div>
+
+        <div class="research-project-card animate-on-scroll delay-400" data-dept="civil">
+          <div class="project-header">
+            <span class="dept-badge civil">CIVIL</span>
+            <span class="project-status ongoing">Ongoing</span>
+          </div>
+          <h3>Earthquake-Resistant Structures</h3>
+          <p>Innovative design methodologies for seismic-resistant building construction.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Dr. V. Naidu</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <span>30 Lakhs</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-building"></i>
+              <span>DST</span>
+            </div>
+          </div>
+          <div class="project-progress">
+            <div class="progress-bar" style="--progress: 30%"></div>
+            <span>30% Complete</span>
+          </div>
+        </div>
+
+        <div class="research-project-card animate-on-scroll delay-500" data-dept="cse">
+          <div class="project-header">
+            <span class="dept-badge cse">CSE</span>
+            <span class="project-status completed">Completed</span>
+          </div>
+          <h3>Blockchain for Supply Chain</h3>
+          <p>Transparent and secure supply chain management using distributed ledger technology.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Dr. R. Patel</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <span>22 Lakhs</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-building"></i>
+              <span>Industry</span>
+            </div>
+          </div>
+          <div class="project-progress">
+            <div class="progress-bar" style="--progress: 100%"></div>
+            <span>100% Complete</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="#" class="btn-primary">View All Projects <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH GRANTS & FUNDING -->
+  <section class="py-20 bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>Research Grants & Funding</h2>
+        <p>Supporting innovation through financial resources</p>
+      </div>
+
+      <div class="funding-sources">
+        <div class="funding-source-card animate-on-scroll">
+          <div class="source-logo">
+            <i class="fa-solid fa-landmark"></i>
+          </div>
+          <h3>AICTE</h3>
+          <p>All India Council for Technical Education</p>
+          <div class="source-stats">
+            <div class="stat">
+              <span class="value">12</span>
+              <span class="label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="value">3.2 Cr</span>
+              <span class="label">Funding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="funding-source-card animate-on-scroll delay-100">
+          <div class="source-logo">
+            <i class="fa-solid fa-flask-vial"></i>
+          </div>
+          <h3>DST</h3>
+          <p>Department of Science & Technology</p>
+          <div class="source-stats">
+            <div class="stat">
+              <span class="value">8</span>
+              <span class="label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="value">4.5 Cr</span>
+              <span class="label">Funding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="funding-source-card animate-on-scroll delay-200">
+          <div class="source-logo">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3>MSME</h3>
+          <p>Ministry of Micro, Small & Medium Enterprises</p>
+          <div class="source-stats">
+            <div class="stat">
+              <span class="value">6</span>
+              <span class="label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="value">1.8 Cr</span>
+              <span class="label">Funding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="funding-source-card animate-on-scroll delay-300">
+          <div class="source-logo">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3>Industry</h3>
+          <p>Corporate & Industry Sponsored Research</p>
+          <div class="source-stats">
+            <div class="stat">
+              <span class="value">16</span>
+              <span class="label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="value">5.7 Cr</span>
+              <span class="label">Funding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="total-funding-showcase">
+        <div class="total-amount">
+          <span class="currency">&#8377;</span>
+          <span class="amount" id="totalFunding">67</span>
+          <span class="unit">Crore+</span>
+        </div>
+        <p>Total Research Grants Received</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS REPOSITORY -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Publications Repository</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-600 mt-4">Quality research published in indexed journals</p>
+      </div>
+
+      <div class="publication-stats-bar">
+        <div class="pub-stat">
+          <div class="pub-icon sci"><i class="fa-solid fa-star"></i></div>
+          <div class="pub-info">
+            <span class="pub-count">45</span>
+            <span class="pub-type">SCI Indexed</span>
+          </div>
+        </div>
+        <div class="pub-stat">
+          <div class="pub-icon scopus"><i class="fa-solid fa-database"></i></div>
+          <div class="pub-info">
+            <span class="pub-count">78</span>
+            <span class="pub-type">Scopus</span>
+          </div>
+        </div>
+        <div class="pub-stat">
+          <div class="pub-icon wos"><i class="fa-solid fa-globe"></i></div>
+          <div class="pub-info">
+            <span class="pub-count">33</span>
+            <span class="pub-type">Web of Science</span>
+          </div>
+        </div>
+        <div class="pub-stat">
+          <div class="pub-icon conf"><i class="fa-solid fa-users"></i></div>
+          <div class="pub-info">
+            <span class="pub-count">120+</span>
+            <span class="pub-type">Conferences</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="publications-list">
+        <div class="publication-item animate-on-scroll">
+          <div class="pub-index-badge sci">SCI</div>
+          <div class="pub-content">
+            <h4>Deep Learning Approaches for Medical Image Segmentation: A Comprehensive Review</h4>
+            <p class="pub-authors">Dr. K. Ramesh, S. Kumar, P. Reddy</p>
+            <p class="pub-journal">IEEE Transactions on Medical Imaging, Vol. 44, Issue 3, 2025</p>
+            <div class="pub-meta">
+              <span><i class="fa-solid fa-quote-left"></i> 45 Citations</span>
+              <span><i class="fa-solid fa-chart-line"></i> IF: 10.6</span>
+            </div>
+          </div>
+          <a href="#" class="pub-link"><i class="fa-solid fa-external-link"></i></a>
+        </div>
+
+        <div class="publication-item animate-on-scroll delay-100">
+          <div class="pub-index-badge scopus">Scopus</div>
+          <div class="pub-content">
+            <h4>IoT-Based Smart Water Quality Monitoring System for Rural Areas</h4>
+            <p class="pub-authors">Dr. P. Reddy, M. Rao, Team Alpha</p>
+            <p class="pub-journal">Sensors and Actuators B: Chemical, Vol. 398, 2024</p>
+            <div class="pub-meta">
+              <span><i class="fa-solid fa-quote-left"></i> 28 Citations</span>
+              <span><i class="fa-solid fa-chart-line"></i> IF: 8.4</span>
+            </div>
+          </div>
+          <a href="#" class="pub-link"><i class="fa-solid fa-external-link"></i></a>
+        </div>
+
+        <div class="publication-item animate-on-scroll delay-200">
+          <div class="pub-index-badge sci">SCI</div>
+          <div class="pub-content">
+            <h4>Hybrid Energy Storage Systems: A Critical Analysis of Battery-Supercapacitor Integration</h4>
+            <p class="pub-authors">Prof. M. Rao, Dr. V. Naidu</p>
+            <p class="pub-journal">Energy Storage Materials, Vol. 56, 2024</p>
+            <div class="pub-meta">
+              <span><i class="fa-solid fa-quote-left"></i> 62 Citations</span>
+              <span><i class="fa-solid fa-chart-line"></i> IF: 20.8</span>
+            </div>
+          </div>
+          <a href="#" class="pub-link"><i class="fa-solid fa-external-link"></i></a>
+        </div>
+
+        <div class="publication-item animate-on-scroll delay-300">
+          <div class="pub-index-badge wos">WoS</div>
+          <div class="pub-content">
+            <h4>Sustainable Construction Materials: Bio-based Composites from Agricultural Waste</h4>
+            <p class="pub-authors">Dr. S. Kumar, R. Patel, J. Singh</p>
+            <p class="pub-journal">Construction and Building Materials, Vol. 412, 2024</p>
+            <div class="pub-meta">
+              <span><i class="fa-solid fa-quote-left"></i> 34 Citations</span>
+              <span><i class="fa-solid fa-chart-line"></i> IF: 7.4</span>
+            </div>
+          </div>
+          <a href="#" class="pub-link"><i class="fa-solid fa-external-link"></i></a>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="#" class="btn-primary">Browse All Publications <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY COLLABORATIONS -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title">
+        <h2>Industry Collaborations</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-600 mt-4">Partnering with leading organizations for impactful research</p>
+      </div>
+
+      <div class="collaborations-showcase">
+        <div class="collab-card animate-on-scroll">
+          <div class="collab-logo"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Tech Mahindra</h3>
+          <p>AI & ML Solutions</p>
+          <span class="collab-projects">4 Active Projects</span>
+        </div>
+        <div class="collab-card animate-on-scroll delay-100">
+          <div class="collab-logo"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Tata Power</h3>
+          <p>Smart Grid Research</p>
+          <span class="collab-projects">3 Active Projects</span>
+        </div>
+        <div class="collab-card animate-on-scroll delay-200">
+          <div class="collab-logo"><i class="fa-solid fa-hospital"></i></div>
+          <h3>Apollo Hospitals</h3>
+          <p>Healthcare Technology</p>
+          <span class="collab-projects">2 Active Projects</span>
+        </div>
+        <div class="collab-card animate-on-scroll delay-300">
+          <div class="collab-logo"><i class="fa-solid fa-tractor"></i></div>
+          <h3>ITC Ltd</h3>
+          <p>AgriTech Innovation</p>
+          <span class="collab-projects">5 Active Projects</span>
+        </div>
+        <div class="collab-card animate-on-scroll delay-400">
+          <div class="collab-logo"><i class="fa-solid fa-satellite"></i></div>
+          <h3>ISRO</h3>
+          <p>Space Technology</p>
+          <span class="collab-projects">2 Active Projects</span>
+        </div>
+        <div class="collab-card animate-on-scroll delay-500">
+          <div class="collab-logo"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>DRDO</h3>
+          <p>Defense Research</p>
+          <span class="collab-projects">3 Active Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDENT RESEARCH -->
+  <section class="py-20 bg-gradient-to-r from-[#1e40af] to-[#3b82f6] text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="section-title-light">
+        <h2>Student Research & Publications</h2>
+        <p>Empowering the next generation of researchers</p>
+      </div>
+
+      <div class="student-research-grid">
+        <div class="student-pub-card animate-on-scroll">
+          <div class="student-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+          <h3>Rahul Sharma</h3>
+          <p class="student-dept">CSE, Final Year</p>
+          <p class="student-paper">"Federated Learning for Privacy-Preserving Healthcare Analytics"</p>
+          <div class="student-pub-info">
+            <span>IEEE Conference 2025</span>
+            <span class="award"><i class="fa-solid fa-trophy"></i> Best Paper</span>
+          </div>
+        </div>
+
+        <div class="student-pub-card animate-on-scroll delay-100">
+          <div class="student-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+          <h3>Priya Patel</h3>
+          <p class="student-dept">ECE, Final Year</p>
+          <p class="student-paper">"Low-Power Wearable ECG Monitor using FPGA"</p>
+          <div class="student-pub-info">
+            <span>Scopus Indexed 2025</span>
+          </div>
+        </div>
+
+        <div class="student-pub-card animate-on-scroll delay-200">
+          <div class="student-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+          <h3>Arun Kumar</h3>
+          <p class="student-dept">EEE, Pre-Final Year</p>
+          <p class="student-paper">"Solar-Powered Water Purification System for Remote Villages"</p>
+          <div class="student-pub-info">
+            <span>National Conference 2024</span>
+            <span class="award"><i class="fa-solid fa-medal"></i> 1st Prize</span>
+          </div>
+        </div>
+
+        <div class="student-pub-card animate-on-scroll delay-300">
+          <div class="student-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+          <h3>Sneha Reddy</h3>
+          <p class="student-dept">MECH, Final Year</p>
+          <p class="student-paper">"3D Printed Prosthetic Limbs using Recycled Materials"</p>
+          <div class="student-pub-info">
+            <span>ASME Journal 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-lg mb-6">Are you a student with a research idea?</p>
+        <a href="#" class="bg-white text-[#1e40af] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:-translate-y-1 inline-block">Submit Your Proposal <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Vignan_logo_only.png" alt="Vignan Logo" class="h-12" />
+            <div>
+              <h3 class="text-white font-bold text-lg">VIGNAN</h3>
+              <p class="text-sm">Centre for Innovation & Startups</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">Vignan's Institute of Information Technology (Autonomous)</p>
+          <div class="space-y-2 text-sm">
+            <p><i class="fa-solid fa-location-dot mr-2 text-[#60a5fa]"></i>Beside VSEZ, Duvvada, Visakhapatnam - 530049</p>
+            <p><i class="fa-solid fa-envelope mr-2 text-[#60a5fa]"></i>vignaniit@yahoo.com</p>
+            <p><i class="fa-solid fa-phone mr-2 text-[#60a5fa]"></i>+91-08912755222</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="innovation.html" class="hover:text-white transition">Innovation Cell</a></li>
+            <li><a href="edcell.html" class="hover:text-white transition">ED Cell</a></li>
+            <li><a href="ipr.html" class="hover:text-white transition">IPR Cell</a></li>
+            <li><a href="research.html" class="hover:text-white transition">R&D Cell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Research Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition">AICTE</a></li>
+            <li><a href="#" class="hover:text-white transition">DST</a></li>
+            <li><a href="#" class="hover:text-white transition">SERB</a></li>
+            <li><a href="#" class="hover:text-white transition">IEEE Xplore</a></li>
+            <li><a href="#" class="hover:text-white transition">Scopus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-sm">
+      <p>&copy; 2026 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    const deptTabs = document.querySelectorAll('.dept-tab');
+    const projectCards = document.querySelectorAll('.research-project-card');
+
+    deptTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        deptTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const dept = tab.dataset.dept;
+        
+        projectCards.forEach(card => {
+          if (dept === 'all' || card.dataset.dept === dept) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeInUp 0.5s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    document.querySelectorAll('.metric-ring').forEach(ring => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            ring.classList.add('animate');
+            observer.unobserve(ring);
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(ring);
+    });
+
+    document.querySelectorAll('.progress-bar').forEach(bar => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const progress = bar.style.getPropertyValue('--progress');
+            bar.style.width = progress;
+            observer.unobserve(bar);
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(bar);
+    });
+
+    function createParticles() {
+      const container = document.getElementById('heroParticles');
+      if (!container) return;
+      
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 5 + 's';
+        particle.style.animationDuration = (5 + Math.random() * 10) + 's';
+        container.appendChild(particle);
+      }
+    }
+    createParticles();
+  </script>
+</body>
+</html>

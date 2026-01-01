@@ -1,0 +1,765 @@
+/* =========================
+   IPR HERO STYLES
+========================= */
+.ipr-hero {
+  background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 30%, #7c3aed 100%);
+}
+
+.floating-icons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floating-icon {
+  position: absolute;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.05);
+  animation: float 20s infinite ease-in-out;
+}
+
+.floating-icon:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.floating-icon:nth-child(2) { top: 60%; left: 80%; animation-delay: -5s; }
+.floating-icon:nth-child(3) { top: 30%; left: 70%; animation-delay: -10s; }
+.floating-icon:nth-child(4) { top: 70%; left: 20%; animation-delay: -15s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.05; }
+  50% { transform: translateY(-30px) rotate(10deg); opacity: 0.1; }
+}
+
+/* =========================
+   IPR TYPES GRID
+========================= */
+.ipr-types-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.ipr-type-card {
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ipr-type-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.2);
+}
+
+.ipr-type-card i {
+  font-size: 1.5rem;
+  color: #1e40af;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.ipr-type-card span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0a1628;
+}
+
+/* =========================
+   IPR STATS SHOWCASE
+========================= */
+.ipr-stats-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.ipr-stat-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ipr-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1e40af, #7c3aed);
+}
+
+.ipr-stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.ipr-stat-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #e0f2fe, #c7d2fe);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: #1e40af;
+}
+
+.ipr-stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0a1628;
+  font-family: 'Playfair Display', serif;
+}
+
+.ipr-stat-label {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* =========================
+   WORKFLOW TIMELINE
+========================= */
+.workflow-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 100px;
+}
+
+.step-connector {
+  position: absolute;
+  left: 45px;
+  top: 50px;
+  width: 2px;
+  height: calc(100% + 20px);
+  background: linear-gradient(180deg, #60a5fa, rgba(96, 165, 250, 0.3));
+}
+
+.workflow-step:last-child .step-connector {
+  display: none;
+}
+
+.step-node {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: 10;
+}
+
+.step-number {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
+}
+
+.step-pulse {
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 2px solid #60a5fa;
+  opacity: 0;
+  animation: none;
+}
+
+.step-pulse.active {
+  animation: stepPulse 1.5s infinite;
+}
+
+@keyframes stepPulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+.step-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(10px);
+}
+
+.step-card.granted {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1));
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #60a5fa;
+}
+
+.step-card.granted .step-icon {
+  color: #10b981;
+}
+
+.step-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.step-card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.step-action {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #60a5fa;
+  font-weight: 600;
+  transition: gap 0.2s;
+}
+
+.step-action:hover {
+  gap: 0.5rem;
+}
+
+.step-duration {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: #60a5fa;
+}
+
+.step-badge {
+  display: inline-block;
+  background: #10b981;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* =========================
+   PATENT DATABASE
+========================= */
+.patent-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.patent-filter-btn {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 2rem;
+  background: white;
+  color: #6b7280;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.patent-filter-btn:hover {
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.patent-filter-btn.active {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: white;
+}
+
+.patent-search {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.patent-search i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.patent-search input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.patent-search input:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+.patents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.patent-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.patent-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.patent-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.patent-status.granted {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.patent-status.filed {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.patent-status.published {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.patent-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.patent-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.patent-meta i {
+  margin-right: 0.25rem;
+}
+
+.patent-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.patent-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.patent-number {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #1e40af;
+  background: #e0f2fe;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.patent-domain {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #7c3aed;
+}
+
+/* =========================
+   PROGRAMS SHOWCASE
+========================= */
+.programs-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.program-showcase-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.program-showcase-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.program-icon-large {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: white;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+}
+
+.program-showcase-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.75rem;
+}
+
+.program-showcase-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.program-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.program-stat .value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7c3aed;
+  font-family: 'Playfair Display', serif;
+}
+
+.program-stat .label {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* =========================
+   UPCOMING EVENTS
+========================= */
+.events-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #7c3aed #e5e7eb;
+}
+
+.events-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.events-scroll::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 3px;
+}
+
+.events-scroll::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 3px;
+}
+
+.ip-event-card {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  min-width: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ip-event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.event-date-badge {
+  flex-shrink: 0;
+  width: 60px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  text-align: center;
+  color: white;
+}
+
+.event-date-badge .month {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.event-date-badge .day {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.event-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.25rem;
+}
+
+.event-info p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.register-link {
+  font-size: 0.85rem;
+  color: #7c3aed;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.2s;
+}
+
+.register-link:hover {
+  gap: 0.75rem;
+}
+
+/* =========================
+   CONSULTATION FORM
+========================= */
+.consultation-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.feature-item i {
+  font-size: 1.25rem;
+  color: #a855f7;
+}
+
+.consultation-form-container {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.consultation-form-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+}
+
+/* =========================
+   POLICY CARDS
+========================= */
+.policy-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.policy-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: #db2777;
+}
+
+.policy-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.policy-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .ipr-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .workflow-step {
+    padding-left: 60px;
+  }
+  
+  .step-node {
+    left: 10px;
+  }
+  
+  .step-connector {
+    left: 25px;
+  }
+  
+  .patents-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ipr-stats-showcase {
+    grid-template-columns: 1fr;
+  }
+}

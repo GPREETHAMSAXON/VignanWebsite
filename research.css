@@ -1,0 +1,826 @@
+/* =========================
+   RESEARCH HERO STYLES
+========================= */
+.research-hero {
+  background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 40%, #10b981 100%);
+}
+
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: particleFloat 10s infinite ease-in-out;
+}
+
+@keyframes particleFloat {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+  50% { transform: translateY(-100px) translateX(30px); opacity: 0.8; }
+}
+
+/* =========================
+   RESEARCH HIGHLIGHTS
+========================= */
+.research-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #e0f2fe, #ccfbf1);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 20px rgba(16, 185, 129, 0.2);
+}
+
+.highlight-item i {
+  font-size: 1.25rem;
+  color: #10b981;
+}
+
+.highlight-item span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0a1628;
+}
+
+/* =========================
+   METRICS RING
+========================= */
+.research-metrics-container {
+  padding: 1rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.metric-card {
+  text-align: center;
+}
+
+.metric-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+}
+
+.metric-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.ring-bg {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 8;
+}
+
+.ring-progress {
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  transition: stroke-dashoffset 2s ease;
+}
+
+.metric-ring.animate .ring-progress {
+  stroke-dashoffset: calc(283 - (283 * var(--progress)) / 100);
+}
+
+.metric-value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0a1628;
+  font-family: 'Playfair Display', serif;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* =========================
+   CTA BANNER
+========================= */
+.cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.cta-content p {
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-primary-btn {
+  background: white;
+  color: #10b981;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-secondary-btn {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cta-visual {
+  flex-shrink: 0;
+}
+
+.animated-icon {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  animation: iconBounce 3s infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* =========================
+   DEPARTMENT TABS
+========================= */
+.department-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.dept-tab {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 2rem;
+  background: white;
+  color: #6b7280;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dept-tab:hover {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.dept-tab.active {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+/* =========================
+   RESEARCH PROJECT CARDS
+========================= */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.research-project-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.research-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.dept-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dept-badge.cse { background: #dbeafe; color: #1d4ed8; }
+.dept-badge.ece { background: #fce7f3; color: #be185d; }
+.dept-badge.eee { background: #fef3c7; color: #d97706; }
+.dept-badge.mech { background: #dcfce7; color: #16a34a; }
+.dept-badge.civil { background: #e0e7ff; color: #4338ca; }
+
+.project-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.project-status.ongoing { background: #fef3c7; color: #d97706; }
+.project-status.completed { background: #dcfce7; color: #16a34a; }
+
+.research-project-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.research-project-card > p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.project-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.detail-item i {
+  color: #10b981;
+}
+
+.project-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f3f4f6;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #10b981, #059669);
+  border-radius: 4px;
+  transition: width 1.5s ease;
+}
+
+.project-progress span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #10b981;
+  white-space: nowrap;
+}
+
+/* =========================
+   FUNDING SOURCES
+========================= */
+.funding-sources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.funding-source-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.funding-source-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.source-logo {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-size: 1.75rem;
+}
+
+.funding-source-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.funding-source-card p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 1.25rem;
+}
+
+.source-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.source-stats .stat {
+  text-align: center;
+}
+
+.source-stats .value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #60a5fa;
+  font-family: 'Playfair Display', serif;
+}
+
+.source-stats .label {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.total-funding-showcase {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+.total-amount {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.total-amount .currency {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.total-amount .amount {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.total-amount .unit {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.total-funding-showcase p {
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+/* =========================
+   PUBLICATION STATS
+========================= */
+.publication-stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8fafc, #e0f2fe);
+  border-radius: 1.5rem;
+}
+
+.pub-stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pub-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.pub-icon.sci { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.pub-icon.scopus { background: linear-gradient(135deg, #10b981, #059669); }
+.pub-icon.wos { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.pub-icon.conf { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+
+.pub-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pub-count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0a1628;
+  font-family: 'Playfair Display', serif;
+}
+
+.pub-type {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* =========================
+   PUBLICATIONS LIST
+========================= */
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.publication-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pub-index-badge {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.pub-index-badge.sci { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.pub-index-badge.scopus { background: linear-gradient(135deg, #10b981, #059669); }
+.pub-index-badge.wos { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+
+.pub-content {
+  flex: 1;
+}
+
+.pub-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors {
+  font-size: 0.85rem;
+  color: #10b981;
+  margin-bottom: 0.25rem;
+}
+
+.pub-journal {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.pub-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.pub-meta i {
+  color: #f59e0b;
+  margin-right: 0.25rem;
+}
+
+.pub-link {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: #e0f2fe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e40af;
+  transition: all 0.2s ease;
+}
+
+.pub-link:hover {
+  background: #1e40af;
+  color: white;
+}
+
+/* =========================
+   COLLABORATIONS
+========================= */
+.collaborations-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.collab-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.collab-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #10b981, #059669);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.collab-card:hover::before {
+  transform: scaleX(1);
+}
+
+.collab-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.collab-logo {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #e0f2fe, #ccfbf1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: #10b981;
+}
+
+.collab-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 0.25rem;
+}
+
+.collab-card p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.collab-projects {
+  display: inline-block;
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* =========================
+   STUDENT RESEARCH
+========================= */
+.student-research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.student-pub-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.student-pub-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.student-avatar {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.75rem;
+}
+
+.student-pub-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.student-dept {
+  font-size: 0.85rem;
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.student-paper {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.student-pub-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.student-pub-info span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.student-pub-info .award {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .research-highlights {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .publication-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .pub-index-badge {
+    margin: 0 auto;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
