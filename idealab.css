@@ -702,6 +702,137 @@
 }
 
 /* =========================
+   CERTIFIED AMBASSADORS
+========================= */
+.section-title-light {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title-light h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-title-light p {
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
+.ambassador-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.ambassador-stats .stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.ambassador-stats .stat-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.ambassador-stats .stat-icon {
+  font-size: 2rem;
+  color: #f59e0b;
+  margin-bottom: 0.75rem;
+}
+
+.ambassador-stats .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.ambassador-stats .stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.ambassadors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.ambassador-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.ambassador-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  border-color: #f59e0b;
+}
+
+.ambassador-avatar {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.75rem;
+}
+
+.ambassador-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ambassador-dept {
+  display: block;
+  font-size: 0.85rem;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+}
+
+.ambassador-cert {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.view-cert-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.view-cert-btn:hover {
+  background: #f59e0b;
+  color: #0a1628;
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
@@ -716,5 +847,13 @@
   .hero-badges {
     flex-direction: column;
     align-items: center;
+  }
+  
+  .ambassador-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .section-title-light h2 {
+    font-size: 1.75rem;
   }
 }
