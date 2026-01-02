@@ -275,6 +275,28 @@ if (animateElements.length > 0) {
 }
 
 /* =========================
+   STAT CARD & PROGRAM CARD MOUSE TRACKING
+========================= */
+const statCards = document.querySelectorAll('.stat-card');
+const programCards = document.querySelectorAll('.program-card');
+
+function handleMouseMove(e, card) {
+  const rect = card.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  card.style.setProperty('--x', `${x}px`);
+  card.style.setProperty('--y', `${y}px`);
+}
+
+statCards.forEach(card => {
+  card.addEventListener('mousemove', (e) => handleMouseMove(e, card));
+});
+
+programCards.forEach(card => {
+  card.addEventListener('mousemove', (e) => handleMouseMove(e, card));
+});
+
+/* =========================
    ACHIEVEMENT HOVER BLUR EFFECT
 ========================= */
 const scrollTrack = document.getElementById("scroll-track");

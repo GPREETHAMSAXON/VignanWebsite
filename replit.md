@@ -226,6 +226,16 @@ Run locally with: `python server.py`
 This is a static website - deploy the entire directory as static files.
 
 ## Recent Changes (Jan 2, 2026)
+- **Glassmorphism Effects & Advanced Interactivity**:
+  - Added glassmorphism KPI cards with backdrop blur, hover animations, and shine effects
+  - Glassmorphism program cards with gradient top border reveal and mouse tracking glow
+  - Fixed achievement scroll track with smooth infinite scrolling animation
+  - Mouse-tracking light effect on stat cards and program cards
+  - Blur effect on non-hovered achievement cards
+  - Full responsive design for all new components (1024px, 768px, 480px breakpoints)
+  - Reduced motion accessibility support
+  
+- **Previous Changes**:
 - **Integrated Real Content from IIC Annual Report 2023-24**:
   - Updated Contact page with real IIC team members (Dr. V. Madhusudhan Rao, Dr. Sudhakar Jyothula, etc.)
   - Added real events: MIC Orientation (Aug 2024), IP Awareness Session (April 2025)
