@@ -825,22 +825,20 @@ body {
 
 .achievement-card {
   flex-shrink: 0;
-  width: 350px;
-  aspect-ratio: 16/10;
   border-radius: 1rem;
   overflow: visible;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
+  height: 200px;
 }
 
 .achievement-card img {
-  width: 100%;
   height: 100%;
-  object-fit: contain;
-  background: #f8fafc;
+  width: auto;
   border-radius: 1rem;
+  display: block;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -1299,7 +1297,7 @@ body {
   }
   
   .achievement-card {
-    width: 280px;
+    height: 160px;
   }
   
   .achievement-card:hover,
@@ -1340,7 +1338,7 @@ body {
   }
   
   .achievement-card {
-    width: 240px;
+    height: 140px;
   }
   
   .achievement-card:hover,
