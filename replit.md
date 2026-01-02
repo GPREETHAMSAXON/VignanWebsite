@@ -54,6 +54,39 @@ A comprehensive static website for Vignan's Institute of Information Technology'
 - **Accent Cyan**: #06b6d4 (Resources)
 - **Fonts**: Poppins (body), Playfair Display (headings)
 
+## Navigation Bar (VIIT Official Style)
+The navigation bar has been redesigned to exactly match the official VIIT website (vignaniit.edu.in):
+
+### Structure
+1. **Top Bar** (Dark Navy #0a1628)
+   - Contact info: Phone, Email, Office Hours
+   - Social media links: Facebook, Twitter, LinkedIn, YouTube, Instagram
+   
+2. **Main Header** (White)
+   - VIIT Logo with link to homepage
+   - Institution name & "Centre for Innovation & Startups" title
+   - CTA buttons: "Contact Us" and "Submit Idea"
+
+3. **Navigation Bar** (Blue Gradient #1e40af to #1e3a8a)
+   - Sticky positioning for easy access
+   - 10 menu items with icons:
+     - Home, Innovation Cell (dropdown), ED Cell (dropdown), IPR (dropdown)
+     - R&D Cell, Idea Lab, Projects, Events, Resources, Contact
+   - Dropdown menus with sub-navigation links
+   - Quick links: Main Website, Downloads
+   - Orange/yellow accent for active state (#f59e0b)
+
+4. **Mobile Menu** (Responsive)
+   - Hamburger button with animated toggle
+   - Full-screen menu with all navigation links
+   - Dividers to group related items
+   - Touch-friendly tap targets
+
+### Dropdown Menus
+- **Innovation Cell**: Overview, Roadmap, TRL Tracker, Project Portfolio
+- **ED Cell**: Overview, Startup Services, Incubated Startups, Register Startup
+- **IPR**: Overview, Patent Filing Process, Patent Database, IPR Consultation
+
 ## Key Pages & Features
 
 ### Home Page (index.html)
@@ -192,7 +225,7 @@ Run locally with: `python server.py`
 ## Deployment
 This is a static website - deploy the entire directory as static files.
 
-## Recent Changes (Jan 2026)
+## Recent Changes (Jan 2, 2026)
 - **Integrated Real Content from IIC Annual Report 2023-24**:
   - Updated Contact page with real IIC team members (Dr. V. Madhusudhan Rao, Dr. Sudhakar Jyothula, etc.)
   - Added real events: MIC Orientation (Aug 2024), IP Awareness Session (April 2025)

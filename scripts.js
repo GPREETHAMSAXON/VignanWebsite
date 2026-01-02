@@ -6,6 +6,35 @@ if (typeof feather !== 'undefined') {
 }
 
 /* =========================
+   MOBILE MENU TOGGLE - VIIT Style
+========================= */
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if (mobileMenuBtn && mobileMenu) {
+  mobileMenuBtn.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+  });
+  
+  // Close menu when clicking a link
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenuBtn.classList.remove('active');
+      mobileMenu.classList.remove('open');
+    });
+  });
+  
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      mobileMenuBtn.classList.remove('active');
+      mobileMenu.classList.remove('open');
+    }
+  });
+}
+
+/* =========================
    ANNOUNCEMENTS AUTO-SCROLL
 ========================= */
 const announcementsContainer = document.querySelector('.announcements-container');

@@ -16,70 +16,114 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 
 <body class="font-sans bg-white text-gray-800">
-  <!-- TOP BAR -->
-  <div class="bg-[#0a1628] text-white py-2 px-4 text-sm">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center gap-4">
-        <span><i class="fa-solid fa-phone mr-2"></i>+91-08912755222</span>
-        <span><i class="fa-solid fa-envelope mr-2"></i>vignaniit@yahoo.com</span>
+  <!-- TOP BAR - VIIT Official Style -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-bar-left">
+        <span><i class="fa-solid fa-phone"></i> +91-08912755222</span>
+        <span><i class="fa-solid fa-envelope"></i> vignaniit@yahoo.com</span>
+        <span><i class="fa-solid fa-clock"></i> Mon-Sat: 9:00 AM - 5:00 PM</span>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      <div class="top-bar-right">
+        <a href="https://facebook.com/vignaniit" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/vignaniit" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/school/vignaniit" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com/@VignanVizagStudio" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/vignaniit" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>
 
-  <!-- MAIN HEADER -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center gap-4">
-        <img src="assets/images/Vignan_logo.png" class="h-14" alt="Vignan Logo" />
-        <div>
-          <p class="text-sm text-gray-500">Vignan's Institute of Information Technology (Autonomous)</p>
-          <h1 class="text-lg font-bold text-[#0a1628]">Centre for Innovation & Startups</h1>
+  <!-- MAIN HEADER - VIIT Official Style -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="assets/images/Vignan_logo.png" alt="Vignan Logo" />
+        <div class="logo-text">
+          <p class="institution-name">Vignan's Institute of Information Technology (Autonomous)</p>
+          <h1 class="center-name">Centre for Innovation & Startups</h1>
         </div>
       </div>
-
-      <nav class="hidden lg:flex items-center gap-1">
-        <a href="index.html" class="nav-item active">Home</a>
-        <a href="innovation.html" class="nav-item">Innovation Cell</a>
-        <a href="edcell.html" class="nav-item">ED Cell</a>
-        <a href="ipr.html" class="nav-item">IPR</a>
-        <a href="research.html" class="nav-item">R&D Cell</a>
-        <a href="idealab.html" class="nav-item">Idea Lab</a>
-        <a href="projects.html" class="nav-item">Projects</a>
-        <a href="events.html" class="nav-item">Events</a>
-        <a href="resources.html" class="nav-item">Resources</a>
-        <a href="contact.html" class="nav-item">Contact</a>
-      </nav>
-
-      <button class="lg:hidden text-2xl text-[#0a1628]" id="mobileMenuBtn">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
-      <a href="index.html" class="block px-4 py-3 border-b hover:bg-gray-50 bg-blue-50 text-[#1e40af]">Home</a>
-      <a href="innovation.html" class="block px-4 py-3 border-b hover:bg-gray-50">Innovation Cell</a>
-      <a href="edcell.html" class="block px-4 py-3 border-b hover:bg-gray-50">ED Cell</a>
-      <a href="ipr.html" class="block px-4 py-3 border-b hover:bg-gray-50">IPR</a>
-      <a href="research.html" class="block px-4 py-3 border-b hover:bg-gray-50">R&D Cell</a>
-      <a href="idealab.html" class="block px-4 py-3 border-b hover:bg-gray-50">Idea Lab</a>
-      <a href="projects.html" class="block px-4 py-3 border-b hover:bg-gray-50">Projects</a>
-      <a href="events.html" class="block px-4 py-3 border-b hover:bg-gray-50">Events</a>
-      <a href="resources.html" class="block px-4 py-3 border-b hover:bg-gray-50">Resources</a>
-      <a href="contact.html" class="block px-4 py-3 hover:bg-gray-50">Contact</a>
+      <div class="header-right">
+        <div class="header-cta">
+          <a href="contact.html" class="cta-contact"><i class="fa-solid fa-headset"></i> Contact Us</a>
+          <a href="idealab.html#idea-form" class="cta-apply"><i class="fa-solid fa-lightbulb"></i> Submit Idea</a>
+        </div>
+      </div>
     </div>
   </header>
+
+  <!-- NAVIGATION BAR - VIIT Official Style -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active"><i class="fa-solid fa-home"></i> Home</a></li>
+        <li>
+          <a href="innovation.html"><i class="fa-solid fa-lightbulb"></i> Innovation Cell <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="innovation.html"><i class="fa-solid fa-rocket"></i> Innovation Overview</a></li>
+            <li><a href="innovation.html#roadmap"><i class="fa-solid fa-road"></i> Innovation Roadmap</a></li>
+            <li><a href="innovation.html#trl"><i class="fa-solid fa-chart-line"></i> TRL Tracker</a></li>
+            <li><a href="innovation.html#projects"><i class="fa-solid fa-folder-open"></i> Project Portfolio</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="edcell.html"><i class="fa-solid fa-briefcase"></i> ED Cell <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="edcell.html"><i class="fa-solid fa-building"></i> Entrepreneurship Cell</a></li>
+            <li><a href="edcell.html#services"><i class="fa-solid fa-hands-helping"></i> Startup Services</a></li>
+            <li><a href="edcell.html#incubated"><i class="fa-solid fa-seedling"></i> Incubated Startups</a></li>
+            <li><a href="edcell.html#register"><i class="fa-solid fa-user-plus"></i> Register Startup</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="ipr.html"><i class="fa-solid fa-certificate"></i> IPR <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="ipr.html"><i class="fa-solid fa-shield-alt"></i> IPR Cell Overview</a></li>
+            <li><a href="ipr.html#workflow"><i class="fa-solid fa-tasks"></i> Patent Filing Process</a></li>
+            <li><a href="ipr.html#database"><i class="fa-solid fa-database"></i> Patent Database</a></li>
+            <li><a href="ipr.html#consultation"><i class="fa-solid fa-comments"></i> IPR Consultation</a></li>
+          </ul>
+        </li>
+        <li><a href="research.html"><i class="fa-solid fa-flask"></i> R&D Cell</a></li>
+        <li><a href="idealab.html"><i class="fa-solid fa-tools"></i> Idea Lab</a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-project-diagram"></i> Projects</a></li>
+        <li><a href="events.html"><i class="fa-solid fa-calendar-alt"></i> Events</a></li>
+        <li><a href="resources.html"><i class="fa-solid fa-download"></i> Resources</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="nav-quick-links">
+        <a href="https://vignaniit.edu.in" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Main Website</a>
+        <a href="resources.html" class="highlight"><i class="fa-solid fa-file-download"></i> Downloads</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="active"><i class="fa-solid fa-home"></i> Home</a>
+    <a href="innovation.html"><i class="fa-solid fa-lightbulb"></i> Innovation Cell</a>
+    <a href="edcell.html"><i class="fa-solid fa-briefcase"></i> ED Cell</a>
+    <a href="ipr.html"><i class="fa-solid fa-certificate"></i> IPR Cell</a>
+    <a href="research.html"><i class="fa-solid fa-flask"></i> R&D Cell</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="idealab.html"><i class="fa-solid fa-tools"></i> Idea Lab</a>
+    <a href="projects.html"><i class="fa-solid fa-project-diagram"></i> Projects</a>
+    <a href="events.html"><i class="fa-solid fa-calendar-alt"></i> Events</a>
+    <a href="resources.html"><i class="fa-solid fa-download"></i> Resources</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+    <a href="https://vignaniit.edu.in" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Main VIIT Website</a>
+  </div>
 
   <!-- HERO SECTION -->
   <section class="hero-section relative overflow-hidden">
